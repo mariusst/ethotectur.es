@@ -1,44 +1,75 @@
 ---
-title: Welcome to Middleman-Foundation-6
+title: etho.tk project
 ---
 
 .row
   .large-12.columns
-    %h1 etho.tk project
-     
+    %h3 
+      %a(href="/") etho.tk
+ 
+%hr
+ 
 .row
   .large-12.medium-12.columns
     .row
       .large-6.medium-6.columns
-        %h4 About
-        .primary.callout
-          %p about text
-      .large-6.medium-6.columns
-        %h4 Projects
+        %h5 About
         .primary.callout
           %p 
-            %a(href="/network-expressions") Network expressions
+            %a(href="/") etho.tk
+            is an online project created by
+            %a{:href => "mailto:mariustoica@gmail.com"} Marius Stoica
+            with the help from
+            %a{:href => "mailto:nita.stoica@gmail.com"} Nita Mocanu.
+            The aim is to create and to present theoretical and artistic works at the crossroads of contemporary art, contemporary philosophy (especially speculativ realism and experimental philosophy) and technology (especially semantic web technology). The source code for
+            %a(href="/") etho.tk
+            can be found on 
+            %a(href="https://github.com/mariusst/etho.tk") GitHub
+      .large-6.medium-6.columns
+        %h5 Works
+        .primary.callout
+          %p
+            %a(href="/network-expressions")
+              %img(src="/images/net-exp-thumb.jpg")
+              %span Network expressions
     .row
       .large-4.medium-4.small-4.columns
-        %h4 Theory bibliografy
+        %h5 Theory bibliografy
         .primary.callout
-          %p Four columns
+          %p meiasu, ooo, laruel, exp fi, mil plat, exp int, arch cun
       .large-4.medium-4.small-4.columns
-        %h4 Technology bibliografy
+        %h5 Technology bibliografy
         .primary.callout
-          %p Four columns
+          %p owl, rdfa, rdf, xml
       .large-4.medium-4.small-4.columns
-        %h4 Software
+        %h5 Software used
         .primary.callout
-          %p 
-            %a https://graves.cl/visualRDF/?url=https://graves.cl/visualRDF/
-          %p 
-            %a https://rdfa.info/play/
           %p
-            %a http://vowl.visualdataweb.org/webvowl/index.html
+            %a(href="http://vowl.visualdataweb.org/webvowl.html") WebVOWL
+            ontology visualization software
+          %p 
+            %a(href="https://rdfa.info/play/") RDFa Play
+            from rdfa.info website
           %p  
-            %a https://chrome.google.com/webstore/detail/green-turtle-rdfa/loggcajcfkpdeoaeihclldihfefijjam?hl=en
+            %a(href="https://chrome.google.com/webstore/detail/green-turtle-rdfa/loggcajcfkpdeoaeihclldihfefijjam?hl=en") Green Turtle
+            for Google Chrome
           %p  
-            %a http://protege.stanford.edu/
+            %a(href="http://protege.stanford.edu/") Protege
+            ontology editor
+          %p 
+            %a(href="https://graves.cl/visualRDF/?url=https://graves.cl/visualRDF/") VisualRDF
 
+%hr
 
+.row
+  .large-12.columns
+    .clearfix
+    %div
+      %a{:href => "//creativecommons.org/licenses/by/4.0/", :rel => "license", :title => "Creative Commons Attribution 4.0 International license"}
+        %img{:alt => "License", :src => "https://licensebuttons.net/l/by/4.0/88x31.png"}
+    %div{:about => "http://creativecommons.org", :style => "display: inline;", "xmlns:cc" => "http://creativecommons.org/ns#"}
+      %div
+        %small
+          Except where otherwise noted, content on
+          %span{:href => "http://creativecommons.org", :property => "cc:attributionName", :rel => "cc:attributionURL"} this site is licensed under a
+          %a.subfoot{:href => "//creativecommons.org/licenses/by/4.0/", :rel => "license"} Creative Commons Attribution 4.0 International license.
