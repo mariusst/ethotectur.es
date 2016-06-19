@@ -97,6 +97,16 @@
 
     <owl:ObjectProperty rdf:about="http://etho.tk/loe/hasName">
         <rdfs:subPropertyOf rdf:resource="http://etho.tk/loe/0.0.1/hasID"/>
+        <rdfs:domain rdf:resource="http://etho.tk/loe/0.0.1/Being"/>
+        <rdfs:domain rdf:resource="http://etho.tk/loe/0.0.1/Communication"/>
+        <rdfs:domain rdf:resource="http://etho.tk/loe/0.0.1/Event"/>
+        <rdfs:domain rdf:resource="http://etho.tk/loe/0.0.1/Statement"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:range>
     </owl:ObjectProperty>
     
 
