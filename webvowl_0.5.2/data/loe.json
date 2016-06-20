@@ -1,0 +1,595 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.2.0), http://vowl.visualdataweb.org",
+  "namespace" : [ ],
+  "header" : {
+    "languages" : [ "IRI-based" ],
+    "iri" : "http://etho.tk/loe/",
+    "version" : "http://etho.tk/loe/0.0.4/"
+  },
+  "metrics" : {
+    "classCount" : 8,
+    "datatypeCount" : 1,
+    "objectPropertyCount" : 20,
+    "datatypePropertyCount" : 1,
+    "propertyCount" : 21,
+    "nodeCount" : 9,
+    "axiomCount" : 135,
+    "individualCount" : 17
+  },
+  "class" : [ {
+    "id" : "class7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class8",
+    "type" : "externalclass"
+  }, {
+    "id" : "class5",
+    "type" : "externalclass"
+  }, {
+    "id" : "class4",
+    "type" : "externalclass"
+  }, {
+    "id" : "class6",
+    "type" : "externalclass"
+  }, {
+    "id" : "class1",
+    "type" : "externalclass"
+  }, {
+    "id" : "class2",
+    "type" : "externalclass"
+  }, {
+    "id" : "class3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class13",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "class11",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "thing1",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "thing4",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "thing2",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "thing3",
+    "type" : "owl:Thing"
+  } ],
+  "classAttribute" : [ {
+    "id" : "class7",
+    "label" : {
+      "IRI-based" : "Collection"
+    },
+    "iri" : "http://etho.tk/loe/Collection",
+    "superClasses" : [ "class2" ],
+    "instances" : 1,
+    "individuals" : [ {
+      "iri" : "http://etho.tk/network-expressions/etotectura.html",
+      "labels" : {
+        "IRI-based" : "http://etho.tk/network-expressions/etotectura.html"
+      },
+      "annotations" : { }
+    } ]
+  }, {
+    "id" : "class8",
+    "label" : {
+      "IRI-based" : "Argument"
+    },
+    "iri" : "http://etho.tk/loe/0.0.1/Argument",
+    "attributes" : [ "external" ],
+    "superClasses" : [ "class2" ],
+    "instances" : 4,
+    "individuals" : [ {
+      "iri" : "http://etho.tk/network-expressions/etotectura.html#etotectura-arg",
+      "labels" : {
+        "IRI-based" : "etotectura-arg"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://etho.tk/network-expressions/etotectura.html#well-being-arg",
+      "labels" : {
+        "IRI-based" : "well-being-arg"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://etho.tk/network-exopressions/etotectura.html#outside-well-being-arg",
+      "labels" : {
+        "IRI-based" : "outside-well-being-arg"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://etho.tk/network-expressions/etotectura.html#comunicarea-orient-obiect-arg",
+      "labels" : {
+        "IRI-based" : "comunicarea-orient-obiect-arg"
+      },
+      "annotations" : { }
+    } ]
+  }, {
+    "id" : "class5",
+    "label" : {
+      "IRI-based" : "Account"
+    },
+    "iri" : "http://etho.tk/loe/0.0.1/Account",
+    "attributes" : [ "external" ],
+    "superClasses" : [ "class2" ],
+    "instances" : 4,
+    "individuals" : [ {
+      "iri" : "http://etho.tk/network-expressions/etotectura.html#no-sufficient-reason-acc",
+      "labels" : {
+        "IRI-based" : "no-sufficient-reason-acc"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://etho.tk/network-expressions/etotectura.html#transgression-tech-acc",
+      "labels" : {
+        "IRI-based" : "transgression-tech-acc"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://etho.tk/network-expressions/etotectura.html#umwelt-acc",
+      "labels" : {
+        "IRI-based" : "umwelt-acc"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://etho.tk/network-expressions/etotectura.html#cruel-reality-acc",
+      "labels" : {
+        "IRI-based" : "cruel-reality-acc"
+      },
+      "annotations" : { }
+    } ]
+  }, {
+    "id" : "class4",
+    "label" : {
+      "IRI-based" : "Event"
+    },
+    "iri" : "http://etho.tk/loe/0.0.1/Event",
+    "attributes" : [ "external" ],
+    "instances" : 0
+  }, {
+    "id" : "class6",
+    "label" : {
+      "IRI-based" : "Being"
+    },
+    "iri" : "http://etho.tk/loe/0.0.1/Being",
+    "attributes" : [ "external" ],
+    "instances" : 0
+  }, {
+    "id" : "class1",
+    "label" : {
+      "IRI-based" : "Communication"
+    },
+    "iri" : "http://etho.tk/loe/0.0.1/Communication",
+    "attributes" : [ "external" ],
+    "instances" : 0
+  }, {
+    "id" : "class2",
+    "label" : {
+      "IRI-based" : "Statement"
+    },
+    "iri" : "http://etho.tk/loe/0.0.1/Statement",
+    "attributes" : [ "external" ],
+    "subClasses" : [ "class7", "class3", "class5", "class8" ],
+    "instances" : 6,
+    "individuals" : [ {
+      "iri" : "http://etho.tk/network-expressions/etotectura.html#umwelt-name-stt",
+      "labels" : {
+        "IRI-based" : "umwelt-name-stt"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://etho.tk/network-expressions/etotectura.html#pasibil-stt",
+      "labels" : {
+        "IRI-based" : "pasibil-stt"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://etho.tk/network-expressions/etotectura.html#devenirea-bloc-stt",
+      "labels" : {
+        "IRI-based" : "devenirea-bloc-stt"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://etho.tk/network-expressions/etotectura.html#no-sufficient-reason-stt",
+      "labels" : {
+        "IRI-based" : "no-sufficient-reason-stt"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://etho.tk/network-expressions/etotectura.html#umwelt-def-stt",
+      "labels" : {
+        "IRI-based" : "umwelt-def-stt"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://etho.tk/network-expressions/etotectura.html#transgression-stt",
+      "labels" : {
+        "IRI-based" : "transgression-stt"
+      },
+      "annotations" : { }
+    } ]
+  }, {
+    "id" : "class3",
+    "label" : {
+      "IRI-based" : "Expectance"
+    },
+    "iri" : "http://etho.tk/loe/Expectance",
+    "superClasses" : [ "class2" ],
+    "instances" : 2,
+    "individuals" : [ {
+      "iri" : "http://etho.tk/network-expressions/etotectura.html#transgression-tech-exp",
+      "labels" : {
+        "IRI-based" : "transgression-tech-exp"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://etho.tk/network-expressions/etotectura.html#transgression-exp",
+      "labels" : {
+        "IRI-based" : "transgression-exp"
+      },
+      "annotations" : { }
+    } ]
+  }, {
+    "id" : "class13",
+    "label" : {
+      "IRI-based" : "anonymous"
+    },
+    "instances" : 0,
+    "intersection" : [ "class5", "class8", "class6", "class1", "class4", "class2" ]
+  }, {
+    "id" : "class11",
+    "label" : {
+      "IRI-based" : "anonymous"
+    },
+    "instances" : 0,
+    "intersection" : [ "class6", "class1", "class4", "class2" ]
+  }, {
+    "id" : "thing1",
+    "label" : {
+      "undefined" : "Thing"
+    },
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "instances" : 0
+  }, {
+    "id" : "thing4",
+    "label" : {
+      "undefined" : "Thing"
+    },
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "instances" : 0
+  }, {
+    "id" : "thing2",
+    "label" : {
+      "undefined" : "Thing"
+    },
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "instances" : 0
+  }, {
+    "id" : "thing3",
+    "label" : {
+      "undefined" : "Thing"
+    },
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "instances" : 0
+  } ],
+  "datatype" : [ {
+    "id" : "literal1",
+    "type" : "rdfs:Literal"
+  } ],
+  "datatypeAttribute" : [ {
+    "id" : "literal1",
+    "label" : {
+      "IRI-based" : "Literal"
+    },
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ],
+  "property" : [ {
+    "id" : "property15",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property18",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property12",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property11",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property8",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property7",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property9",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property24",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property13",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property10",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property17",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property4",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property25",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property3",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property2",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property19",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property1",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property14",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property22",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property5",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property20",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property6",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property21",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property16",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "id" : "property15",
+    "label" : {
+      "IRI-based" : "expressedAt"
+    },
+    "iri" : "http://etho.tk/loe/0.0.1/expressedAt",
+    "attributes" : [ "external" ],
+    "domain" : "class2",
+    "range" : "class4",
+    "inverse" : "property22",
+    "equivalent" : [ "property8" ],
+    "superproperty" : [ "property17" ]
+  }, {
+    "id" : "property18",
+    "label" : {
+      "IRI-based" : "argumentOf"
+    },
+    "iri" : "http://etho.tk/loe/0.0.1/argumentOf",
+    "attributes" : [ "external" ],
+    "domain" : "class8",
+    "range" : "class5",
+    "subproperty" : [ "property12" ]
+  }, {
+    "id" : "property12",
+    "label" : {
+      "IRI-based" : "expressedIn"
+    },
+    "iri" : "http://etho.tk/loe/0.0.1/expressedIn",
+    "attributes" : [ "external" ],
+    "domain" : "class5",
+    "range" : "class1",
+    "inverse" : "property6",
+    "equivalent" : [ "property24" ],
+    "superproperty" : [ "property18" ]
+  }, {
+    "id" : "property11",
+    "label" : {
+      "IRI-based" : "expectsCommunication"
+    },
+    "iri" : "http://etho.tk/loe/expectsCommunication",
+    "domain" : "class3",
+    "range" : "class1"
+  }, {
+    "id" : "property8",
+    "label" : {
+      "IRI-based" : "identifiesEvent"
+    },
+    "iri" : "http://etho.tk/loe/identifiesEvent",
+    "domain" : "class5",
+    "range" : "class4",
+    "equivalent" : [ "property15" ]
+  }, {
+    "id" : "property7",
+    "label" : {
+      "IRI-based" : "insideOfExpression"
+    },
+    "iri" : "http://etho.tk/loe/insideOfExpression",
+    "domain" : "class2",
+    "range" : "thing1"
+  }, {
+    "id" : "property9",
+    "label" : {
+      "IRI-based" : "expectsBeing"
+    },
+    "iri" : "http://etho.tk/loe/expectsBeing",
+    "domain" : "class3",
+    "range" : "class6"
+  }, {
+    "id" : "property23",
+    "label" : {
+      "IRI-based" : "hasID"
+    },
+    "iri" : "http://etho.tk/loe/0.0.1/hasID",
+    "attributes" : [ "external" ],
+    "domain" : "class13",
+    "range" : "thing3",
+    "subproperty" : [ "property10" ]
+  }, {
+    "id" : "property24",
+    "label" : {
+      "IRI-based" : "identifiesCommunication"
+    },
+    "iri" : "http://etho.tk/loe/identifiesCommunication",
+    "domain" : "class8",
+    "range" : "class1",
+    "equivalent" : [ "property12" ]
+  }, {
+    "id" : "property13",
+    "label" : {
+      "IRI-based" : "hasDescription"
+    },
+    "iri" : "http://etho.tk/loe/hasDescription",
+    "domain" : "class2",
+    "range" : "thing1",
+    "superproperty" : [ "property5" ]
+  }, {
+    "id" : "property10",
+    "label" : {
+      "IRI-based" : "hasName"
+    },
+    "iri" : "http://etho.tk/loe/hasName",
+    "domain" : "class11",
+    "range" : "thing2",
+    "superproperty" : [ "property23" ]
+  }, {
+    "id" : "property17",
+    "label" : {
+      "IRI-based" : "accountOf"
+    },
+    "iri" : "http://etho.tk/loe/0.0.1/accountOf",
+    "attributes" : [ "external" ],
+    "domain" : "class5",
+    "range" : "class2",
+    "subproperty" : [ "property15" ]
+  }, {
+    "id" : "property4",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class8",
+    "range" : "class2"
+  }, {
+    "id" : "property25",
+    "label" : {
+      "IRI-based" : "topDataProperty"
+    },
+    "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
+    "attributes" : [ "external" ],
+    "domain" : "thing4",
+    "range" : "literal1",
+    "minCardinality" : 1
+  }, {
+    "id" : "property3",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class5",
+    "range" : "class2"
+  }, {
+    "id" : "property2",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class3",
+    "range" : "class2"
+  }, {
+    "id" : "property19",
+    "label" : {
+      "IRI-based" : "expressedBy"
+    },
+    "iri" : "http://etho.tk/loe/0.0.1/expressedBy",
+    "attributes" : [ "external" ],
+    "domain" : "class2",
+    "range" : "class6",
+    "inverse" : "property20",
+    "equivalent" : [ "property14" ]
+  }, {
+    "id" : "property1",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class7",
+    "range" : "class2"
+  }, {
+    "id" : "property14",
+    "label" : {
+      "IRI-based" : "identifiesBeing"
+    },
+    "iri" : "http://etho.tk/loe/identifiesBeing",
+    "domain" : "class2",
+    "range" : "class6",
+    "equivalent" : [ "property19" ]
+  }, {
+    "id" : "property22",
+    "label" : {
+      "IRI-based" : "marks"
+    },
+    "iri" : "http://etho.tk/loe/0.0.1/marks",
+    "attributes" : [ "external" ],
+    "domain" : "class4",
+    "range" : "class2",
+    "inverse" : "property15"
+  }, {
+    "id" : "property5",
+    "label" : {
+      "IRI-based" : "is"
+    },
+    "iri" : "http://etho.tk/loe/0.0.1/is",
+    "attributes" : [ "external" ],
+    "domain" : "class2",
+    "range" : "thing1",
+    "subproperty" : [ "property13" ]
+  }, {
+    "id" : "property20",
+    "label" : {
+      "IRI-based" : "expresses"
+    },
+    "iri" : "http://etho.tk/loe/0.0.1/expresses",
+    "attributes" : [ "external" ],
+    "domain" : "class6",
+    "range" : "class2",
+    "inverse" : "property19"
+  }, {
+    "id" : "property6",
+    "label" : {
+      "IRI-based" : "includes"
+    },
+    "iri" : "http://etho.tk/loe/0.0.1/includes",
+    "attributes" : [ "external" ],
+    "domain" : "class1",
+    "range" : "class2",
+    "inverse" : "property12"
+  }, {
+    "id" : "property21",
+    "label" : {
+      "IRI-based" : "collectionOf"
+    },
+    "iri" : "http://etho.tk/loe/collectionOf",
+    "domain" : "class7",
+    "range" : "class2"
+  }, {
+    "id" : "property16",
+    "label" : {
+      "IRI-based" : "expectsEvent"
+    },
+    "iri" : "http://etho.tk/loe/expectsEvent",
+    "domain" : "class3",
+    "range" : "class4"
+  } ]
+}
