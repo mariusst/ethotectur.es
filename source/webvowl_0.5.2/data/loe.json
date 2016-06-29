@@ -2,9 +2,16 @@
   "_comment" : "Created with OWL2VOWL (version 0.2.0), http://vowl.visualdataweb.org",
   "namespace" : [ ],
   "header" : {
-    "languages" : [ "IRI-based" ],
+    "languages" : [ "IRI-based", "undefined" ],
+    "title" : {
+      "undefined" : "Layers of Expression Semantics"
+    },
     "iri" : "http://etho.tk/loe/",
-    "version" : "http://etho.tk/loe/0.0.4/"
+    "version" : "http://etho.tk/loe/0.0.4/",	
+    "author" : [ "Marius Stoica" ],		
+    "description" : {
+      "undefined" : "Layers of Expression (LOE) RDF vocabulary, described using W3C RDF Schema and the Web Ontology Language."
+    }
   },
   "metrics" : {
     "classCount" : 8,
@@ -96,7 +103,7 @@
       },
       "annotations" : { }
     }, {
-      "iri" : "http://etho.tk/network-exopressions/etotectura.html#outside-well-being-arg",
+      "iri" : "http://etho.tk/network-expressions/etotectura.html#outside-well-being-arg",
       "labels" : {
         "IRI-based" : "outside-well-being-arg"
       },
