@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://etho.tk/LoE#"
-     xml:base="http://etho.tk/LoE"
+<rdf:RDF xmlns="http://etho.tk/loe#"
+     xml:base="http://etho.tk/loe"
      xmlns:loe="http://etho.tk/loe/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://etho.tk/LoE"/>
+    <owl:Ontology rdf:about="http://etho.tk/loe"/>
     
 
 
@@ -22,109 +22,109 @@
     
 
 
-    <!-- http://etho.tk/LoE#accountOf -->
+    <!-- http://etho.tk/loe#accountOf -->
 
-    <owl:ObjectProperty rdf:about="http://etho.tk/LoE#accountOf">
-        <rdfs:domain rdf:resource="http://etho.tk/LoE#Account"/>
-        <rdfs:range rdf:resource="http://etho.tk/LoE#Statement"/>
+    <owl:ObjectProperty rdf:about="http://etho.tk/loe#accountOf">
+        <rdfs:domain rdf:resource="http://etho.tk/loe#Account"/>
+        <rdfs:range rdf:resource="http://etho.tk/loe#Statement"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://etho.tk/LoE#argumentOf -->
+    <!-- http://etho.tk/loe#argumentOf -->
 
-    <owl:ObjectProperty rdf:about="http://etho.tk/LoE#argumentOf">
-        <rdfs:domain rdf:resource="http://etho.tk/LoE#Argument"/>
-        <rdfs:range rdf:resource="http://etho.tk/LoE#Account"/>
+    <owl:ObjectProperty rdf:about="http://etho.tk/loe#argumentOf">
+        <rdfs:domain rdf:resource="http://etho.tk/loe#Argument"/>
+        <rdfs:range rdf:resource="http://etho.tk/loe#Account"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://etho.tk/LoE#collectionOf -->
+    <!-- http://etho.tk/loe#collectionOf -->
 
-    <owl:ObjectProperty rdf:about="http://etho.tk/LoE#collectionOf">
-        <rdfs:domain rdf:resource="http://etho.tk/LoE#Collection"/>
-        <rdfs:range rdf:resource="http://etho.tk/LoE#Statement"/>
+    <owl:ObjectProperty rdf:about="http://etho.tk/loe#collectionOf">
+        <rdfs:domain rdf:resource="http://etho.tk/loe#Collection"/>
+        <rdfs:range rdf:resource="http://etho.tk/loe#Statement"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://etho.tk/LoE#expectsBeing -->
+    <!-- http://etho.tk/loe#expectsBeing -->
 
-    <owl:ObjectProperty rdf:about="http://etho.tk/LoE#expectsBeing">
-        <rdfs:domain rdf:resource="http://etho.tk/LoE#Expectance"/>
-        <rdfs:range rdf:resource="http://etho.tk/LoE#Being"/>
+    <owl:ObjectProperty rdf:about="http://etho.tk/loe#expectsBeing">
+        <rdfs:domain rdf:resource="http://etho.tk/loe#Expectance"/>
+        <rdfs:range rdf:resource="http://etho.tk/loe#Being"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://etho.tk/LoE#expectsCommunication -->
+    <!-- http://etho.tk/loe#expectsCommunication -->
 
-    <owl:ObjectProperty rdf:about="http://etho.tk/LoE#expectsCommunication">
-        <rdfs:domain rdf:resource="http://etho.tk/LoE#Expectance"/>
-        <rdfs:range rdf:resource="http://etho.tk/LoE#Communication"/>
+    <owl:ObjectProperty rdf:about="http://etho.tk/loe#expectsCommunication">
+        <rdfs:domain rdf:resource="http://etho.tk/loe#Expectance"/>
+        <rdfs:range rdf:resource="http://etho.tk/loe#Communication"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://etho.tk/LoE#expectsEvent -->
+    <!-- http://etho.tk/loe#expectsEvent -->
 
-    <owl:ObjectProperty rdf:about="http://etho.tk/LoE#expectsEvent">
-        <rdfs:domain rdf:resource="http://etho.tk/LoE#Expectance"/>
-        <rdfs:range rdf:resource="http://etho.tk/LoE#Event"/>
+    <owl:ObjectProperty rdf:about="http://etho.tk/loe#expectsEvent">
+        <rdfs:domain rdf:resource="http://etho.tk/loe#Expectance"/>
+        <rdfs:range rdf:resource="http://etho.tk/loe#Event"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://etho.tk/LoE#expressedAt -->
+    <!-- http://etho.tk/loe#expressedAt -->
 
-    <owl:ObjectProperty rdf:about="http://etho.tk/LoE#expressedAt">
-        <owl:equivalentProperty rdf:resource="http://etho.tk/LoE#identifiesEvent"/>
-        <rdfs:subPropertyOf rdf:resource="http://etho.tk/LoE#accountOf"/>
-        <owl:inverseOf rdf:resource="http://etho.tk/LoE#marks"/>
-        <rdfs:domain rdf:resource="http://etho.tk/LoE#Statement"/>
-        <rdfs:range rdf:resource="http://etho.tk/LoE#Event"/>
+    <owl:ObjectProperty rdf:about="http://etho.tk/loe#expressedAt">
+        <owl:equivalentProperty rdf:resource="http://etho.tk/loe#identifiesEvent"/>
+        <rdfs:subPropertyOf rdf:resource="http://etho.tk/loe#accountOf"/>
+        <owl:inverseOf rdf:resource="http://etho.tk/loe#marks"/>
+        <rdfs:domain rdf:resource="http://etho.tk/loe#Statement"/>
+        <rdfs:range rdf:resource="http://etho.tk/loe#Event"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://etho.tk/LoE#expressedBy -->
+    <!-- http://etho.tk/loe#expressedBy -->
 
-    <owl:ObjectProperty rdf:about="http://etho.tk/LoE#expressedBy">
-        <owl:equivalentProperty rdf:resource="http://etho.tk/LoE#identifiesBeing"/>
-        <owl:inverseOf rdf:resource="http://etho.tk/LoE#expresses"/>
-        <rdfs:domain rdf:resource="http://etho.tk/LoE#Statement"/>
-        <rdfs:range rdf:resource="http://etho.tk/LoE#Being"/>
+    <owl:ObjectProperty rdf:about="http://etho.tk/loe#expressedBy">
+        <owl:equivalentProperty rdf:resource="http://etho.tk/loe#identifiesBeing"/>
+        <owl:inverseOf rdf:resource="http://etho.tk/loe#expresses"/>
+        <rdfs:domain rdf:resource="http://etho.tk/loe#Statement"/>
+        <rdfs:range rdf:resource="http://etho.tk/loe#Being"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://etho.tk/LoE#expressedIn -->
+    <!-- http://etho.tk/loe#expressedIn -->
 
-    <owl:ObjectProperty rdf:about="http://etho.tk/LoE#expressedIn">
-        <owl:equivalentProperty rdf:resource="http://etho.tk/LoE#identifiesCommunication"/>
-        <rdfs:subPropertyOf rdf:resource="http://etho.tk/LoE#argumentOf"/>
-        <owl:inverseOf rdf:resource="http://etho.tk/LoE#includes"/>
-        <rdfs:domain rdf:resource="http://etho.tk/LoE#Account"/>
-        <rdfs:range rdf:resource="http://etho.tk/LoE#Communication"/>
+    <owl:ObjectProperty rdf:about="http://etho.tk/loe#expressedIn">
+        <owl:equivalentProperty rdf:resource="http://etho.tk/loe#identifiesCommunication"/>
+        <rdfs:subPropertyOf rdf:resource="http://etho.tk/loe#argumentOf"/>
+        <owl:inverseOf rdf:resource="http://etho.tk/loe#includes"/>
+        <rdfs:domain rdf:resource="http://etho.tk/loe#Account"/>
+        <rdfs:range rdf:resource="http://etho.tk/loe#Communication"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://etho.tk/LoE#expresses -->
+    <!-- http://etho.tk/loe#expresses -->
 
-    <owl:ObjectProperty rdf:about="http://etho.tk/LoE#expresses">
-        <rdfs:domain rdf:resource="http://etho.tk/LoE#Being"/>
-        <rdfs:range rdf:resource="http://etho.tk/LoE#Statement"/>
+    <owl:ObjectProperty rdf:about="http://etho.tk/loe#expresses">
+        <rdfs:domain rdf:resource="http://etho.tk/loe#Being"/>
+        <rdfs:range rdf:resource="http://etho.tk/loe#Statement"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://etho.tk/LoE#hasDescription -->
+    <!-- http://etho.tk/loe#hasDescription -->
 
-    <owl:ObjectProperty rdf:about="http://etho.tk/LoE#hasDescription">
-        <rdfs:subPropertyOf rdf:resource="http://etho.tk/LoE#is"/>
-        <rdfs:domain rdf:resource="http://etho.tk/LoE#Statement"/>
+    <owl:ObjectProperty rdf:about="http://etho.tk/loe#hasDescription">
+        <rdfs:subPropertyOf rdf:resource="http://etho.tk/loe#is"/>
+        <rdfs:domain rdf:resource="http://etho.tk/loe#Statement"/>
         <rdfs:range>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
@@ -153,15 +153,15 @@
     
 
 
-    <!-- http://etho.tk/LoE#hasID -->
+    <!-- http://etho.tk/loe#hasID -->
 
-    <owl:ObjectProperty rdf:about="http://etho.tk/LoE#hasID">
-        <rdfs:domain rdf:resource="http://etho.tk/LoE#Account"/>
-        <rdfs:domain rdf:resource="http://etho.tk/LoE#Argument"/>
-        <rdfs:domain rdf:resource="http://etho.tk/LoE#Being"/>
-        <rdfs:domain rdf:resource="http://etho.tk/LoE#Communication"/>
-        <rdfs:domain rdf:resource="http://etho.tk/LoE#Event"/>
-        <rdfs:domain rdf:resource="http://etho.tk/LoE#Statement"/>
+    <owl:ObjectProperty rdf:about="http://etho.tk/loe#hasID">
+        <rdfs:domain rdf:resource="http://etho.tk/loe#Account"/>
+        <rdfs:domain rdf:resource="http://etho.tk/loe#Argument"/>
+        <rdfs:domain rdf:resource="http://etho.tk/loe#Being"/>
+        <rdfs:domain rdf:resource="http://etho.tk/loe#Communication"/>
+        <rdfs:domain rdf:resource="http://etho.tk/loe#Event"/>
+        <rdfs:domain rdf:resource="http://etho.tk/loe#Statement"/>
         <rdfs:range>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
@@ -202,14 +202,14 @@
     
 
 
-    <!-- http://etho.tk/LoE#hasName -->
+    <!-- http://etho.tk/loe#hasName -->
 
-    <owl:ObjectProperty rdf:about="http://etho.tk/LoE#hasName">
-        <rdfs:subPropertyOf rdf:resource="http://etho.tk/LoE#hasID"/>
-        <rdfs:domain rdf:resource="http://etho.tk/LoE#Being"/>
-        <rdfs:domain rdf:resource="http://etho.tk/LoE#Communication"/>
-        <rdfs:domain rdf:resource="http://etho.tk/LoE#Event"/>
-        <rdfs:domain rdf:resource="http://etho.tk/LoE#Statement"/>
+    <owl:ObjectProperty rdf:about="http://etho.tk/loe#hasName">
+        <rdfs:subPropertyOf rdf:resource="http://etho.tk/loe#hasID"/>
+        <rdfs:domain rdf:resource="http://etho.tk/loe#Being"/>
+        <rdfs:domain rdf:resource="http://etho.tk/loe#Communication"/>
+        <rdfs:domain rdf:resource="http://etho.tk/loe#Event"/>
+        <rdfs:domain rdf:resource="http://etho.tk/loe#Statement"/>
         <rdfs:range>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
@@ -220,46 +220,46 @@
     
 
 
-    <!-- http://etho.tk/LoE#identifiesBeing -->
+    <!-- http://etho.tk/loe#identifiesBeing -->
 
-    <owl:ObjectProperty rdf:about="http://etho.tk/LoE#identifiesBeing">
-        <rdfs:domain rdf:resource="http://etho.tk/LoE#Statement"/>
-        <rdfs:range rdf:resource="http://etho.tk/LoE#Being"/>
+    <owl:ObjectProperty rdf:about="http://etho.tk/loe#identifiesBeing">
+        <rdfs:domain rdf:resource="http://etho.tk/loe#Statement"/>
+        <rdfs:range rdf:resource="http://etho.tk/loe#Being"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://etho.tk/LoE#identifiesCommunication -->
+    <!-- http://etho.tk/loe#identifiesCommunication -->
 
-    <owl:ObjectProperty rdf:about="http://etho.tk/LoE#identifiesCommunication">
-        <rdfs:domain rdf:resource="http://etho.tk/LoE#Argument"/>
-        <rdfs:range rdf:resource="http://etho.tk/LoE#Communication"/>
+    <owl:ObjectProperty rdf:about="http://etho.tk/loe#identifiesCommunication">
+        <rdfs:domain rdf:resource="http://etho.tk/loe#Argument"/>
+        <rdfs:range rdf:resource="http://etho.tk/loe#Communication"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://etho.tk/LoE#identifiesEvent -->
+    <!-- http://etho.tk/loe#identifiesEvent -->
 
-    <owl:ObjectProperty rdf:about="http://etho.tk/LoE#identifiesEvent">
-        <rdfs:domain rdf:resource="http://etho.tk/LoE#Account"/>
-        <rdfs:range rdf:resource="http://etho.tk/LoE#Event"/>
+    <owl:ObjectProperty rdf:about="http://etho.tk/loe#identifiesEvent">
+        <rdfs:domain rdf:resource="http://etho.tk/loe#Account"/>
+        <rdfs:range rdf:resource="http://etho.tk/loe#Event"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://etho.tk/LoE#includes -->
+    <!-- http://etho.tk/loe#includes -->
 
-    <owl:ObjectProperty rdf:about="http://etho.tk/LoE#includes">
-        <rdfs:domain rdf:resource="http://etho.tk/LoE#Communication"/>
-        <rdfs:range rdf:resource="http://etho.tk/LoE#Statement"/>
+    <owl:ObjectProperty rdf:about="http://etho.tk/loe#includes">
+        <rdfs:domain rdf:resource="http://etho.tk/loe#Communication"/>
+        <rdfs:range rdf:resource="http://etho.tk/loe#Statement"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://etho.tk/LoE#insideOfExpression -->
+    <!-- http://etho.tk/loe#insideOfExpression -->
 
-    <owl:ObjectProperty rdf:about="http://etho.tk/LoE#insideOfExpression">
-        <rdfs:domain rdf:resource="http://etho.tk/LoE#Statement"/>
+    <owl:ObjectProperty rdf:about="http://etho.tk/loe#insideOfExpression">
+        <rdfs:domain rdf:resource="http://etho.tk/loe#Statement"/>
         <rdfs:range>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
@@ -271,10 +271,10 @@
     
 
 
-    <!-- http://etho.tk/LoE#is -->
+    <!-- http://etho.tk/loe#is -->
 
-    <owl:ObjectProperty rdf:about="http://etho.tk/LoE#is">
-        <rdfs:domain rdf:resource="http://etho.tk/LoE#Statement"/>
+    <owl:ObjectProperty rdf:about="http://etho.tk/loe#is">
+        <rdfs:domain rdf:resource="http://etho.tk/loe#Statement"/>
         <rdfs:range>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
@@ -303,11 +303,11 @@
     
 
 
-    <!-- http://etho.tk/LoE#marks -->
+    <!-- http://etho.tk/loe#marks -->
 
-    <owl:ObjectProperty rdf:about="http://etho.tk/LoE#marks">
-        <rdfs:domain rdf:resource="http://etho.tk/LoE#Event"/>
-        <rdfs:range rdf:resource="http://etho.tk/LoE#Statement"/>
+    <owl:ObjectProperty rdf:about="http://etho.tk/loe#marks">
+        <rdfs:domain rdf:resource="http://etho.tk/loe#Event"/>
+        <rdfs:range rdf:resource="http://etho.tk/loe#Statement"/>
     </owl:ObjectProperty>
     
 
@@ -323,65 +323,65 @@
     
 
 
-    <!-- http://etho.tk/LoE#Account -->
+    <!-- http://etho.tk/loe#Account -->
 
-    <owl:Class rdf:about="http://etho.tk/LoE#Account">
-        <rdfs:subClassOf rdf:resource="http://etho.tk/LoE#Statement"/>
+    <owl:Class rdf:about="http://etho.tk/loe#Account">
+        <rdfs:subClassOf rdf:resource="http://etho.tk/loe#Statement"/>
     </owl:Class>
     
 
 
-    <!-- http://etho.tk/LoE#Argument -->
+    <!-- http://etho.tk/loe#Argument -->
 
-    <owl:Class rdf:about="http://etho.tk/LoE#Argument">
-        <rdfs:subClassOf rdf:resource="http://etho.tk/LoE#Statement"/>
+    <owl:Class rdf:about="http://etho.tk/loe#Argument">
+        <rdfs:subClassOf rdf:resource="http://etho.tk/loe#Statement"/>
     </owl:Class>
     
 
 
-    <!-- http://etho.tk/LoE#Being -->
+    <!-- http://etho.tk/loe#Being -->
 
-    <owl:Class rdf:about="http://etho.tk/LoE#Being">
+    <owl:Class rdf:about="http://etho.tk/loe#Being">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     </owl:Class>
     
 
 
-    <!-- http://etho.tk/LoE#Collection -->
+    <!-- http://etho.tk/loe#Collection -->
 
-    <owl:Class rdf:about="http://etho.tk/LoE#Collection">
-        <rdfs:subClassOf rdf:resource="http://etho.tk/LoE#Statement"/>
+    <owl:Class rdf:about="http://etho.tk/loe#Collection">
+        <rdfs:subClassOf rdf:resource="http://etho.tk/loe#Statement"/>
     </owl:Class>
     
 
 
-    <!-- http://etho.tk/LoE#Communication -->
+    <!-- http://etho.tk/loe#Communication -->
 
-    <owl:Class rdf:about="http://etho.tk/LoE#Communication">
+    <owl:Class rdf:about="http://etho.tk/loe#Communication">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     </owl:Class>
     
 
 
-    <!-- http://etho.tk/LoE#Event -->
+    <!-- http://etho.tk/loe#Event -->
 
-    <owl:Class rdf:about="http://etho.tk/LoE#Event">
+    <owl:Class rdf:about="http://etho.tk/loe#Event">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     </owl:Class>
     
 
 
-    <!-- http://etho.tk/LoE#Expectance -->
+    <!-- http://etho.tk/loe#Expectance -->
 
-    <owl:Class rdf:about="http://etho.tk/LoE#Expectance">
-        <rdfs:subClassOf rdf:resource="http://etho.tk/LoE#Statement"/>
+    <owl:Class rdf:about="http://etho.tk/loe#Expectance">
+        <rdfs:subClassOf rdf:resource="http://etho.tk/loe#Statement"/>
     </owl:Class>
     
 
 
-    <!-- http://etho.tk/LoE#Statement -->
+    <!-- http://etho.tk/loe#Statement -->
 
-    <owl:Class rdf:about="http://etho.tk/LoE#Statement">
+    <owl:Class rdf:about="http://etho.tk/loe#Statement">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     </owl:Class>
     
@@ -401,7 +401,7 @@
     <!-- http://etho.tk/network-expressions/etotectura.html -->
 
     <owl:NamedIndividual rdf:about="http://etho.tk/network-expressions/etotectura.html">
-        <rdf:type rdf:resource="http://etho.tk/LoE#Collection"/>
+        <rdf:type rdf:resource="http://etho.tk/loe#Collection"/>
     </owl:NamedIndividual>
     
 
@@ -409,7 +409,7 @@
     <!-- http://etho.tk/network-expressions/etotectura.html#comunicarea-orient-obiect-arg -->
 
     <owl:NamedIndividual rdf:about="http://etho.tk/network-expressions/etotectura.html#comunicarea-orient-obiect-arg">
-        <rdf:type rdf:resource="http://etho.tk/LoE#Argument"/>
+        <rdf:type rdf:resource="http://etho.tk/loe#Argument"/>
     </owl:NamedIndividual>
     
 
@@ -417,7 +417,7 @@
     <!-- http://etho.tk/network-expressions/etotectura.html#cruel-reality-acc -->
 
     <owl:NamedIndividual rdf:about="http://etho.tk/network-expressions/etotectura.html#cruel-reality-acc">
-        <rdf:type rdf:resource="http://etho.tk/LoE#Account"/>
+        <rdf:type rdf:resource="http://etho.tk/loe#Account"/>
     </owl:NamedIndividual>
     
 
@@ -425,7 +425,7 @@
     <!-- http://etho.tk/network-expressions/etotectura.html#devenirea-bloc-stt -->
 
     <owl:NamedIndividual rdf:about="http://etho.tk/network-expressions/etotectura.html#devenirea-bloc-stt">
-        <rdf:type rdf:resource="http://etho.tk/LoE#Statement"/>
+        <rdf:type rdf:resource="http://etho.tk/loe#Statement"/>
     </owl:NamedIndividual>
     
 
@@ -433,7 +433,7 @@
     <!-- http://etho.tk/network-expressions/etotectura.html#etotectura-arg -->
 
     <owl:NamedIndividual rdf:about="http://etho.tk/network-expressions/etotectura.html#etotectura-arg">
-        <rdf:type rdf:resource="http://etho.tk/LoE#Argument"/>
+        <rdf:type rdf:resource="http://etho.tk/loe#Argument"/>
     </owl:NamedIndividual>
     
 
@@ -441,7 +441,7 @@
     <!-- http://etho.tk/network-expressions/etotectura.html#no-sufficient-reason-acc -->
 
     <owl:NamedIndividual rdf:about="http://etho.tk/network-expressions/etotectura.html#no-sufficient-reason-acc">
-        <rdf:type rdf:resource="http://etho.tk/LoE#Account"/>
+        <rdf:type rdf:resource="http://etho.tk/loe#Account"/>
     </owl:NamedIndividual>
     
 
@@ -449,7 +449,7 @@
     <!-- http://etho.tk/network-expressions/etotectura.html#no-sufficient-reason-stt -->
 
     <owl:NamedIndividual rdf:about="http://etho.tk/network-expressions/etotectura.html#no-sufficient-reason-stt">
-        <rdf:type rdf:resource="http://etho.tk/LoE#Statement"/>
+        <rdf:type rdf:resource="http://etho.tk/loe#Statement"/>
     </owl:NamedIndividual>
     
 
@@ -457,7 +457,7 @@
     <!-- http://etho.tk/network-expressions/etotectura.html#outside-well-being-arg -->
 
     <owl:NamedIndividual rdf:about="http://etho.tk/network-expressions/etotectura.html#outside-well-being-arg">
-        <rdf:type rdf:resource="http://etho.tk/LoE#Argument"/>
+        <rdf:type rdf:resource="http://etho.tk/loe#Argument"/>
     </owl:NamedIndividual>
     
 
@@ -465,7 +465,7 @@
     <!-- http://etho.tk/network-expressions/etotectura.html#pasibil-stt -->
 
     <owl:NamedIndividual rdf:about="http://etho.tk/network-expressions/etotectura.html#pasibil-stt">
-        <rdf:type rdf:resource="http://etho.tk/LoE#Statement"/>
+        <rdf:type rdf:resource="http://etho.tk/loe#Statement"/>
     </owl:NamedIndividual>
     
 
@@ -473,7 +473,7 @@
     <!-- http://etho.tk/network-expressions/etotectura.html#transgression-exp -->
 
     <owl:NamedIndividual rdf:about="http://etho.tk/network-expressions/etotectura.html#transgression-exp">
-        <rdf:type rdf:resource="http://etho.tk/LoE#Expectance"/>
+        <rdf:type rdf:resource="http://etho.tk/loe#Expectance"/>
     </owl:NamedIndividual>
     
 
@@ -481,7 +481,7 @@
     <!-- http://etho.tk/network-expressions/etotectura.html#transgression-stt -->
 
     <owl:NamedIndividual rdf:about="http://etho.tk/network-expressions/etotectura.html#transgression-stt">
-        <rdf:type rdf:resource="http://etho.tk/LoE#Statement"/>
+        <rdf:type rdf:resource="http://etho.tk/loe#Statement"/>
     </owl:NamedIndividual>
     
 
@@ -489,7 +489,7 @@
     <!-- http://etho.tk/network-expressions/etotectura.html#transgression-tech-acc -->
 
     <owl:NamedIndividual rdf:about="http://etho.tk/network-expressions/etotectura.html#transgression-tech-acc">
-        <rdf:type rdf:resource="http://etho.tk/LoE#Account"/>
+        <rdf:type rdf:resource="http://etho.tk/loe#Account"/>
     </owl:NamedIndividual>
     
 
@@ -497,7 +497,7 @@
     <!-- http://etho.tk/network-expressions/etotectura.html#transgression-tech-exp -->
 
     <owl:NamedIndividual rdf:about="http://etho.tk/network-expressions/etotectura.html#transgression-tech-exp">
-        <rdf:type rdf:resource="http://etho.tk/LoE#Expectance"/>
+        <rdf:type rdf:resource="http://etho.tk/loe#Expectance"/>
     </owl:NamedIndividual>
     
 
@@ -505,7 +505,7 @@
     <!-- http://etho.tk/network-expressions/etotectura.html#umwelt-acc -->
 
     <owl:NamedIndividual rdf:about="http://etho.tk/network-expressions/etotectura.html#umwelt-acc">
-        <rdf:type rdf:resource="http://etho.tk/LoE#Account"/>
+        <rdf:type rdf:resource="http://etho.tk/loe#Account"/>
     </owl:NamedIndividual>
     
 
@@ -513,7 +513,7 @@
     <!-- http://etho.tk/network-expressions/etotectura.html#umwelt-def-stt -->
 
     <owl:NamedIndividual rdf:about="http://etho.tk/network-expressions/etotectura.html#umwelt-def-stt">
-        <rdf:type rdf:resource="http://etho.tk/LoE#Statement"/>
+        <rdf:type rdf:resource="http://etho.tk/loe#Statement"/>
     </owl:NamedIndividual>
     
 
@@ -521,7 +521,7 @@
     <!-- http://etho.tk/network-expressions/etotectura.html#umwelt-name-stt -->
 
     <owl:NamedIndividual rdf:about="http://etho.tk/network-expressions/etotectura.html#umwelt-name-stt">
-        <rdf:type rdf:resource="http://etho.tk/LoE#Statement"/>
+        <rdf:type rdf:resource="http://etho.tk/loe#Statement"/>
     </owl:NamedIndividual>
     
 
@@ -529,7 +529,7 @@
     <!-- http://etho.tk/network-expressions/etotectura.html#well-being-arg -->
 
     <owl:NamedIndividual rdf:about="http://etho.tk/network-expressions/etotectura.html#well-being-arg">
-        <rdf:type rdf:resource="http://etho.tk/LoE#Argument"/>
+        <rdf:type rdf:resource="http://etho.tk/loe#Argument"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
