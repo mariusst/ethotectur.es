@@ -394,7 +394,7 @@
 
     <!-- http://etho.tk/network-exopressions/etotectura.html#outside-well-being-arg -->
 
-    <owl:NamedIndividual rdf:about="http://etho.tk/network-exopressions/etotectura.html#outside-well-being-arg">
+    <owl:NamedIndividual rdf:about="http://etho.tk/network-expressions/etotectura.html#outside-well-being-arg">
         <rdf:type rdf:resource="http://etho.tk/loe/0.0.1/Argument"/>
     </owl:NamedIndividual>
     
