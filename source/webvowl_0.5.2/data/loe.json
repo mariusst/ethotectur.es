@@ -4,13 +4,13 @@
   "header" : {
     "languages" : [ "IRI-based", "undefined" ],
     "title" : {
-      "undefined" : "Layers of Expression Semantics"
+      "undefined" : "Layers of Expressions Ontology"
     },
     "iri" : "http://etho.tk/loe/",
-    "version" : "http://etho.tk/loe/0.0.4/",	
+    "version" : "0.0.4",	
     "author" : [ "Marius Stoica" ],		
     "description" : {
-      "undefined" : "Layers of Expression (LOE) RDF vocabulary, described using W3C RDF Schema and the Web Ontology Language."
+      "undefined" : "Layers of Expressions (LoE) RDF vocabulary, described using W3C RDF Schema and the Web Ontology Language."
     }
   },
   "metrics" : {
