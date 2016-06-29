@@ -6,11 +6,11 @@
     "title" : {
       "undefined" : "Layers of Expressions Ontology"
     },
-    "iri" : "http://etho.tk/LoE#",
+    "iri" : "http://etho.tk/loe#",
     "version" : "0.0.4",	
     "author" : [ "Marius Stoica" ],		
     "description" : {
-      "undefined" : "Layers of Expressions (LoE) RDF vocabulary, described using W3C RDF Schema and the Web Ontology Language."
+      "undefined" : "Layers of Expressions (loe) RDF vocabulary, described using W3C RDF Schema and the Web Ontology Language."
     }
   },
   "metrics" : {
@@ -71,7 +71,7 @@
     "label" : {
       "IRI-based" : "Collection"
     },
-    "iri" : "http://etho.tk/LoE#Collection",
+    "iri" : "http://etho.tk/loe#Collection",
     "superClasses" : [ "class2" ],
     "instances" : 1,
     "individuals" : [ {
@@ -86,7 +86,7 @@
     "label" : {
       "IRI-based" : "Argument"
     },
-    "iri" : "http://etho.tk/LoE#Argument",
+    "iri" : "http://etho.tk/loe#Argument",
     "attributes" : [ "external" ],
     "superClasses" : [ "class2" ],
     "instances" : 4,
@@ -120,7 +120,7 @@
     "label" : {
       "IRI-based" : "Account"
     },
-    "iri" : "http://etho.tk/LoE#Account",
+    "iri" : "http://etho.tk/loe#Account",
     "attributes" : [ "external" ],
     "superClasses" : [ "class2" ],
     "instances" : 4,
@@ -154,7 +154,7 @@
     "label" : {
       "IRI-based" : "Event"
     },
-    "iri" : "http://etho.tk/LoE#Event",
+    "iri" : "http://etho.tk/loe#Event",
     "attributes" : [ "external" ],
     "instances" : 0
   }, {
@@ -162,7 +162,7 @@
     "label" : {
       "IRI-based" : "Being"
     },
-    "iri" : "http://etho.tk/LoE#Being",
+    "iri" : "http://etho.tk/loe#Being",
     "attributes" : [ "external" ],
     "instances" : 0
   }, {
@@ -170,7 +170,7 @@
     "label" : {
       "IRI-based" : "Communication"
     },
-    "iri" : "http://etho.tk/LoE#Communication",
+    "iri" : "http://etho.tk/loe#Communication",
     "attributes" : [ "external" ],
     "instances" : 0
   }, {
@@ -178,7 +178,7 @@
     "label" : {
       "IRI-based" : "Statement"
     },
-    "iri" : "http://etho.tk/LoE#Statement",
+    "iri" : "http://etho.tk/loe#Statement",
     "attributes" : [ "external" ],
     "subClasses" : [ "class7", "class3", "class5", "class8" ],
     "instances" : 6,
@@ -224,7 +224,7 @@
     "label" : {
       "IRI-based" : "Expectance"
     },
-    "iri" : "http://etho.tk/LoE#Expectance",
+    "iri" : "http://etho.tk/loe#Expectance",
     "superClasses" : [ "class2" ],
     "instances" : 2,
     "individuals" : [ {
@@ -375,7 +375,7 @@
     "label" : {
       "IRI-based" : "expressedAt"
     },
-    "iri" : "http://etho.tk/LoE#expressedAt",
+    "iri" : "http://etho.tk/loe#expressedAt",
     "attributes" : [ "external" ],
     "domain" : "class2",
     "range" : "class4",
@@ -387,7 +387,7 @@
     "label" : {
       "IRI-based" : "argumentOf"
     },
-    "iri" : "http://etho.tk/LoE#argumentOf",
+    "iri" : "http://etho.tk/loe#argumentOf",
     "attributes" : [ "external" ],
     "domain" : "class8",
     "range" : "class5",
@@ -397,7 +397,7 @@
     "label" : {
       "IRI-based" : "expressedIn"
     },
-    "iri" : "http://etho.tk/LoE#expressedIn",
+    "iri" : "http://etho.tk/loe#expressedIn",
     "attributes" : [ "external" ],
     "domain" : "class5",
     "range" : "class1",
@@ -409,7 +409,7 @@
     "label" : {
       "IRI-based" : "expectsCommunication"
     },
-    "iri" : "http://etho.tk/LoE#expectsCommunication",
+    "iri" : "http://etho.tk/loe#expectsCommunication",
     "domain" : "class3",
     "range" : "class1"
   }, {
@@ -417,7 +417,7 @@
     "label" : {
       "IRI-based" : "identifiesEvent"
     },
-    "iri" : "http://etho.tk/LoE#identifiesEvent",
+    "iri" : "http://etho.tk/loe#identifiesEvent",
     "domain" : "class5",
     "range" : "class4",
     "equivalent" : [ "property15" ]
@@ -426,7 +426,7 @@
     "label" : {
       "IRI-based" : "insideOfExpression"
     },
-    "iri" : "http://etho.tk/LoE#insideOfExpression",
+    "iri" : "http://etho.tk/loe#insideOfExpression",
     "domain" : "class2",
     "range" : "thing1"
   }, {
@@ -434,7 +434,7 @@
     "label" : {
       "IRI-based" : "expectsBeing"
     },
-    "iri" : "http://etho.tk/LoE#expectsBeing",
+    "iri" : "http://etho.tk/loe#expectsBeing",
     "domain" : "class3",
     "range" : "class6"
   }, {
@@ -442,7 +442,7 @@
     "label" : {
       "IRI-based" : "hasID"
     },
-    "iri" : "http://etho.tk/LoE#hasID",
+    "iri" : "http://etho.tk/loe#hasID",
     "attributes" : [ "external" ],
     "domain" : "class13",
     "range" : "thing3",
@@ -452,7 +452,7 @@
     "label" : {
       "IRI-based" : "identifiesCommunication"
     },
-    "iri" : "http://etho.tk/LoE#identifiesCommunication",
+    "iri" : "http://etho.tk/loe#identifiesCommunication",
     "domain" : "class8",
     "range" : "class1",
     "equivalent" : [ "property12" ]
@@ -461,7 +461,7 @@
     "label" : {
       "IRI-based" : "hasDescription"
     },
-    "iri" : "http://etho.tk/LoE#hasDescription",
+    "iri" : "http://etho.tk/loe#hasDescription",
     "domain" : "class2",
     "range" : "thing1",
     "superproperty" : [ "property5" ]
@@ -470,7 +470,7 @@
     "label" : {
       "IRI-based" : "hasName"
     },
-    "iri" : "http://etho.tk/LoE#hasName",
+    "iri" : "http://etho.tk/loe#hasName",
     "domain" : "class11",
     "range" : "thing2",
     "superproperty" : [ "property23" ]
@@ -479,7 +479,7 @@
     "label" : {
       "IRI-based" : "accountOf"
     },
-    "iri" : "http://etho.tk/LoE#accountOf",
+    "iri" : "http://etho.tk/loe#accountOf",
     "attributes" : [ "external" ],
     "domain" : "class5",
     "range" : "class2",
@@ -520,7 +520,7 @@
     "label" : {
       "IRI-based" : "expressedBy"
     },
-    "iri" : "http://etho.tk/LoE#expressedBy",
+    "iri" : "http://etho.tk/loe#expressedBy",
     "attributes" : [ "external" ],
     "domain" : "class2",
     "range" : "class6",
@@ -538,7 +538,7 @@
     "label" : {
       "IRI-based" : "identifiesBeing"
     },
-    "iri" : "http://etho.tk/LoE#identifiesBeing",
+    "iri" : "http://etho.tk/loe#identifiesBeing",
     "domain" : "class2",
     "range" : "class6",
     "equivalent" : [ "property19" ]
@@ -547,7 +547,7 @@
     "label" : {
       "IRI-based" : "marks"
     },
-    "iri" : "http://etho.tk/LoE#marks",
+    "iri" : "http://etho.tk/loe#marks",
     "attributes" : [ "external" ],
     "domain" : "class4",
     "range" : "class2",
@@ -557,7 +557,7 @@
     "label" : {
       "IRI-based" : "is"
     },
-    "iri" : "http://etho.tk/LoE#is",
+    "iri" : "http://etho.tk/loe#is",
     "attributes" : [ "external" ],
     "domain" : "class2",
     "range" : "thing1",
@@ -567,7 +567,7 @@
     "label" : {
       "IRI-based" : "expresses"
     },
-    "iri" : "http://etho.tk/LoE#expresses",
+    "iri" : "http://etho.tk/loe#expresses",
     "attributes" : [ "external" ],
     "domain" : "class6",
     "range" : "class2",
@@ -577,7 +577,7 @@
     "label" : {
       "IRI-based" : "includes"
     },
-    "iri" : "http://etho.tk/LoE#includes",
+    "iri" : "http://etho.tk/loe#includes",
     "attributes" : [ "external" ],
     "domain" : "class1",
     "range" : "class2",
@@ -587,7 +587,7 @@
     "label" : {
       "IRI-based" : "collectionOf"
     },
-    "iri" : "http://etho.tk/LoE#collectionOf",
+    "iri" : "http://etho.tk/loe#collectionOf",
     "domain" : "class7",
     "range" : "class2"
   }, {
@@ -595,7 +595,7 @@
     "label" : {
       "IRI-based" : "expectsEvent"
     },
-    "iri" : "http://etho.tk/LoE#expectsEvent",
+    "iri" : "http://etho.tk/loe#expectsEvent",
     "domain" : "class3",
     "range" : "class4"
   } ]
