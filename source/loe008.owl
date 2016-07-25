@@ -9,10 +9,10 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://etho.tk/loe">
+        <owl:versionInfo xml:lang="en">0.0.8</owl:versionInfo>
         <dc:title xml:lang="en">Layers of Expressions</dc:title>
-        <dc:creator xml:lang="en">Marius Stoica</dc:creator>
         <dc:description xml:lang="en">Layers of Expressions is a Semantic Web Ontology for the Expressiveness of the World. The Expressive World is a theoretical model of information, communication and knowledge representation based on various non-anthropocentric concepts and theories retrieved or developed from phenomenology, post-structuralist philosophy, ANT theory, speculative realism and object-oriented ontology.</dc:description>
-        <owl:versionInfo xml:lang="en">0.0.4</owl:versionInfo>
+        <dc:creator xml:lang="en">Marius Stoica</dc:creator>
     </owl:Ontology>
     
 
@@ -66,11 +66,20 @@
     <!-- http://etho.tk/loe#accountOf -->
 
     <owl:ObjectProperty rdf:about="http://etho.tk/loe#accountOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://etho.tk/loe#accountedBy"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdfs:domain rdf:resource="http://etho.tk/loe#Account"/>
         <rdfs:range rdf:resource="http://etho.tk/loe#Statement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://etho.tk/loe#accountedBy -->
+
+    <owl:ObjectProperty rdf:about="http://etho.tk/loe#accountedBy">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://etho.tk/loe#Statement"/>
+        <rdfs:range rdf:resource="http://etho.tk/loe#Account"/>
     </owl:ObjectProperty>
     
 
@@ -78,10 +87,28 @@
     <!-- http://etho.tk/loe#argumentOf -->
 
     <owl:ObjectProperty rdf:about="http://etho.tk/loe#argumentOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <owl:inverseOf rdf:resource="http://etho.tk/loe#argumentedBy"/>
         <rdfs:domain rdf:resource="http://etho.tk/loe#Argument"/>
         <rdfs:range rdf:resource="http://etho.tk/loe#Account"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://etho.tk/loe#argumentedBy -->
+
+    <owl:ObjectProperty rdf:about="http://etho.tk/loe#argumentedBy">
+        <rdfs:domain rdf:resource="http://etho.tk/loe#Account"/>
+        <rdfs:range rdf:resource="http://etho.tk/loe#Argument"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://etho.tk/loe#collectedIn -->
+
+    <owl:ObjectProperty rdf:about="http://etho.tk/loe#collectedIn">
+        <owl:inverseOf rdf:resource="http://etho.tk/loe#collectionOf"/>
+        <rdfs:domain rdf:resource="http://etho.tk/loe#Statement"/>
+        <rdfs:range rdf:resource="http://etho.tk/loe#Collection"/>
     </owl:ObjectProperty>
     
 
@@ -89,8 +116,6 @@
     <!-- http://etho.tk/loe#collectionOf -->
 
     <owl:ObjectProperty rdf:about="http://etho.tk/loe#collectionOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdfs:domain rdf:resource="http://etho.tk/loe#Collection"/>
         <rdfs:range rdf:resource="http://etho.tk/loe#Statement"/>
     </owl:ObjectProperty>
@@ -100,9 +125,7 @@
     <!-- http://etho.tk/loe#expectanceOf -->
 
     <owl:ObjectProperty rdf:about="http://etho.tk/loe#expectanceOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://etho.tk/loe#expectedBy"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdfs:domain rdf:resource="http://etho.tk/loe#Expectance"/>
         <rdfs:range rdf:resource="http://etho.tk/loe#Statement"/>
     </owl:ObjectProperty>
@@ -112,8 +135,6 @@
     <!-- http://etho.tk/loe#expectedBy -->
 
     <owl:ObjectProperty rdf:about="http://etho.tk/loe#expectedBy">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdfs:domain rdf:resource="http://etho.tk/loe#Statement"/>
         <rdfs:range rdf:resource="http://etho.tk/loe#Expectance"/>
     </owl:ObjectProperty>
@@ -123,10 +144,7 @@
     <!-- http://etho.tk/loe#expressedAt -->
 
     <owl:ObjectProperty rdf:about="http://etho.tk/loe#expressedAt">
-        <owl:equivalentProperty rdf:resource="http://etho.tk/loe#identifiesEvent"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://etho.tk/loe#marks"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdfs:domain rdf:resource="http://etho.tk/loe#Statement"/>
         <rdfs:range rdf:resource="http://etho.tk/loe#Event"/>
     </owl:ObjectProperty>
@@ -137,9 +155,7 @@
 
     <owl:ObjectProperty rdf:about="http://etho.tk/loe#expressedBy">
         <owl:equivalentProperty rdf:resource="http://etho.tk/loe#identifiesBeing"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://etho.tk/loe#expresses"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdfs:domain rdf:resource="http://etho.tk/loe#Statement"/>
         <rdfs:range rdf:resource="http://etho.tk/loe#Being"/>
     </owl:ObjectProperty>
@@ -149,10 +165,6 @@
     <!-- http://etho.tk/loe#expressedIn -->
 
     <owl:ObjectProperty rdf:about="http://etho.tk/loe#expressedIn">
-        <owl:equivalentProperty rdf:resource="http://etho.tk/loe#identifiesCommunication"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <owl:inverseOf rdf:resource="http://etho.tk/loe#includes"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdfs:domain rdf:resource="http://etho.tk/loe#Account"/>
         <rdfs:range rdf:resource="http://etho.tk/loe#Communication"/>
     </owl:ObjectProperty>
@@ -162,10 +174,9 @@
     <!-- http://etho.tk/loe#expresses -->
 
     <owl:ObjectProperty rdf:about="http://etho.tk/loe#expresses">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdfs:domain rdf:resource="http://etho.tk/loe#Being"/>
         <rdfs:range rdf:resource="http://etho.tk/loe#Statement"/>
+        <owl:propertyDisjointWith rdf:resource="http://etho.tk/loe#includes"/>
     </owl:ObjectProperty>
     
 
@@ -173,7 +184,6 @@
     <!-- http://etho.tk/loe#hasDescription -->
 
     <owl:ObjectProperty rdf:about="http://etho.tk/loe#hasDescription">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://etho.tk/loe#Statement"/>
         <rdfs:range>
             <owl:Restriction>
@@ -206,8 +216,6 @@
     <!-- http://etho.tk/loe#hasID -->
 
     <owl:ObjectProperty rdf:about="http://etho.tk/loe#hasID">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdfs:domain rdf:resource="http://etho.tk/loe#Being"/>
         <rdfs:domain rdf:resource="http://etho.tk/loe#Communication"/>
         <rdfs:domain rdf:resource="http://etho.tk/loe#Event"/>
@@ -256,7 +264,6 @@
 
     <owl:ObjectProperty rdf:about="http://etho.tk/loe#hasName">
         <rdfs:subPropertyOf rdf:resource="http://etho.tk/loe#hasID"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdfs:domain rdf:resource="http://etho.tk/loe#Being"/>
         <rdfs:domain rdf:resource="http://etho.tk/loe#Communication"/>
         <rdfs:domain rdf:resource="http://etho.tk/loe#Event"/>
@@ -274,8 +281,6 @@
     <!-- http://etho.tk/loe#identifiesBeing -->
 
     <owl:ObjectProperty rdf:about="http://etho.tk/loe#identifiesBeing">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdfs:domain rdf:resource="http://etho.tk/loe#Statement"/>
         <rdfs:range rdf:resource="http://etho.tk/loe#Being"/>
     </owl:ObjectProperty>
@@ -285,8 +290,6 @@
     <!-- http://etho.tk/loe#identifiesCommunication -->
 
     <owl:ObjectProperty rdf:about="http://etho.tk/loe#identifiesCommunication">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdfs:domain rdf:resource="http://etho.tk/loe#Argument"/>
         <rdfs:range rdf:resource="http://etho.tk/loe#Communication"/>
     </owl:ObjectProperty>
@@ -296,8 +299,6 @@
     <!-- http://etho.tk/loe#identifiesEvent -->
 
     <owl:ObjectProperty rdf:about="http://etho.tk/loe#identifiesEvent">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdfs:domain rdf:resource="http://etho.tk/loe#Account"/>
         <rdfs:range rdf:resource="http://etho.tk/loe#Event"/>
     </owl:ObjectProperty>
@@ -307,24 +308,8 @@
     <!-- http://etho.tk/loe#includes -->
 
     <owl:ObjectProperty rdf:about="http://etho.tk/loe#includes">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdfs:domain rdf:resource="http://etho.tk/loe#Communication"/>
         <rdfs:range rdf:resource="http://etho.tk/loe#Statement"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://etho.tk/loe#insideOfExpression -->
-
-    <owl:ObjectProperty rdf:about="http://etho.tk/loe#insideOfExpression">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdfs:domain rdf:resource="http://etho.tk/loe#Statement"/>
-        <rdfs:range rdf:resource="http://etho.tk/loe#Account"/>
-        <rdfs:range rdf:resource="http://etho.tk/loe#Argument"/>
-        <rdfs:range rdf:resource="http://etho.tk/loe#Collection"/>
-        <rdfs:range rdf:resource="http://etho.tk/loe#Expectance"/>
     </owl:ObjectProperty>
     
 
@@ -332,8 +317,6 @@
     <!-- http://etho.tk/loe#is -->
 
     <owl:ObjectProperty rdf:about="http://etho.tk/loe#is">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdfs:domain rdf:resource="http://etho.tk/loe#Statement"/>
         <rdfs:range>
             <owl:Restriction>
@@ -366,10 +349,77 @@
     <!-- http://etho.tk/loe#marks -->
 
     <owl:ObjectProperty rdf:about="http://etho.tk/loe#marks">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdfs:domain rdf:resource="http://etho.tk/loe#Event"/>
         <rdfs:range rdf:resource="http://etho.tk/loe#Statement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://etho.tk/loe#statedIn -->
+
+    <owl:ObjectProperty rdf:about="http://etho.tk/loe#statedIn">
+        <owl:inverseOf rdf:resource="http://etho.tk/loe#statementOf"/>
+        <rdfs:domain rdf:resource="http://etho.tk/loe#Account"/>
+        <rdfs:domain rdf:resource="http://etho.tk/loe#Argument"/>
+        <rdfs:domain rdf:resource="http://etho.tk/loe#Collection"/>
+        <rdfs:domain rdf:resource="http://etho.tk/loe#Expectance"/>
+        <rdfs:range rdf:resource="http://etho.tk/loe#Statement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://etho.tk/loe#statementOf -->
+
+    <owl:ObjectProperty rdf:about="http://etho.tk/loe#statementOf">
+        <rdfs:domain rdf:resource="http://etho.tk/loe#Statement"/>
+        <rdfs:range rdf:resource="http://etho.tk/loe#Account"/>
+        <rdfs:range rdf:resource="http://etho.tk/loe#Argument"/>
+        <rdfs:range rdf:resource="http://etho.tk/loe#Collection"/>
+        <rdfs:range rdf:resource="http://etho.tk/loe#Expectance"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://etho.tk/loe#whenAndWhere -->
+
+    <owl:ObjectProperty rdf:about="http://etho.tk/loe#whenAndWhere">
+        <rdfs:domain rdf:resource="http://etho.tk/loe#Event"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+            </owl:Restriction>
+        </rdfs:range>
     </owl:ObjectProperty>
     
 
@@ -388,7 +438,32 @@
     <!-- http://etho.tk/loe#Account -->
 
     <owl:Class rdf:about="http://etho.tk/loe#Account">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://etho.tk/loe#Statement"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://etho.tk/loe#accountOf"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://etho.tk/loe#Statement"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://etho.tk/loe#expressedAt"/>
+                                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                                        <owl:onClass rdf:resource="http://etho.tk/loe#Event"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:onClass>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://etho.tk/loe#Statement"/>
+        <rdfs:comment xml:lang="en">An Account is a type of Statement that incorporates other Statemnts and identifies their expression Events.</rdfs:comment>
+        <rdfs:label xml:lang="en">Account</rdfs:label>
     </owl:Class>
     
 
@@ -396,7 +471,32 @@
     <!-- http://etho.tk/loe#Argument -->
 
     <owl:Class rdf:about="http://etho.tk/loe#Argument">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://etho.tk/loe#Statement"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://etho.tk/loe#argumentOf"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                        <owl:onClass>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://etho.tk/loe#Account"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://etho.tk/loe#expressedIn"/>
+                                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                                        <owl:onClass rdf:resource="http://etho.tk/loe#Communication"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:onClass>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://etho.tk/loe#Statement"/>
+        <rdfs:comment xml:lang="en">An Argument is a type of Statement that contains at least an Account and that identifies the Communication in which that Accounts are expressed.</rdfs:comment>
+        <rdfs:label xml:lang="en">Argument</rdfs:label>
     </owl:Class>
     
 
@@ -404,8 +504,25 @@
     <!-- http://etho.tk/loe#Being -->
 
     <owl:Class rdf:about="http://etho.tk/loe#Being">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://etho.tk/loe#Being"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://etho.tk/loe#Communication"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://etho.tk/loe#expresses"/>
+                                <owl:someValuesFrom rdf:resource="http://etho.tk/loe#Statement"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <owl:disjointWith rdf:resource="http://etho.tk/loe#Event"/>
+        <rdfs:comment xml:lang="en">Being is everything that can expresse Statements. The inside is a reproductible complex Communication that can be broken down to network expressions that are selfsustained through pathwayes  of Communication or ethotectures</rdfs:comment>
+        <rdfs:label xml:lang="en">Being</rdfs:label>
     </owl:Class>
     
 
@@ -413,7 +530,21 @@
     <!-- http://etho.tk/loe#Collection -->
 
     <owl:Class rdf:about="http://etho.tk/loe#Collection">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://etho.tk/loe#Statement"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://etho.tk/loe#collectionOf"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://etho.tk/loe#Statement"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://etho.tk/loe#Statement"/>
+        <rdfs:comment xml:lang="en">A Collection is a simple Statement of a collection of Statements that are expressed together.</rdfs:comment>
+        <rdfs:label xml:lang="en">Collection</rdfs:label>
     </owl:Class>
     
 
@@ -421,8 +552,25 @@
     <!-- http://etho.tk/loe#Communication -->
 
     <owl:Class rdf:about="http://etho.tk/loe#Communication">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://etho.tk/loe#Communication"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://etho.tk/loe#Being"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://etho.tk/loe#includes"/>
+                                <owl:someValuesFrom rdf:resource="http://etho.tk/loe#Statement"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <owl:disjointWith rdf:resource="http://etho.tk/loe#Event"/>
+        <rdfs:comment xml:lang="en">Communication is a complex layer and network of Statemnts that at a certain point in its developement becomes a self reproductible ethotecture or Being.</rdfs:comment>
+        <rdfs:label xml:lang="en">Communication</rdfs:label>
     </owl:Class>
     
 
@@ -430,8 +578,20 @@
     <!-- http://etho.tk/loe#Event -->
 
     <owl:Class rdf:about="http://etho.tk/loe#Event">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://etho.tk/loe#Event"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://etho.tk/loe#whenAndWhere"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <owl:disjointWith rdf:resource="http://etho.tk/loe#Statement"/>
+        <rdfs:comment xml:lang="en">An Event is a space and time referance for the expression of a Statement.</rdfs:comment>
+        <rdfs:label xml:lang="en">Event</rdfs:label>
     </owl:Class>
     
 
@@ -439,7 +599,21 @@
     <!-- http://etho.tk/loe#Expectance -->
 
     <owl:Class rdf:about="http://etho.tk/loe#Expectance">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://etho.tk/loe#Statement"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://etho.tk/loe#expectanceOf"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://etho.tk/loe#Statement"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://etho.tk/loe#Statement"/>
+        <rdfs:comment xml:lang="en">An Expectance is a special type of Statement that expects the expression of other Statemnts. The Expectance is the expression of the relation between Beings; from light relations like questioning to hard complex relation like atraction and dependency.</rdfs:comment>
+        <rdfs:label xml:lang="en">Expectance</rdfs:label>
     </owl:Class>
     
 
@@ -447,7 +621,20 @@
     <!-- http://etho.tk/loe#Statement -->
 
     <owl:Class rdf:about="http://etho.tk/loe#Statement">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://etho.tk/loe#Statement"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://etho.tk/loe#expressedBy"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://etho.tk/loe#Being"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="en">A Statement is the manifestation of expressing something by a Being. Complex Statemnts relation create Communications.</rdfs:comment>
+        <rdfs:label xml:lang="en">Statement</rdfs:label>
     </owl:Class>
     
 
