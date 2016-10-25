@@ -602,6 +602,15 @@
     
 
 
+    <!-- http://etho.tk/loe#Difference -->
+
+    <owl:Class rdf:about="http://etho.tk/loe#Difference">
+        <rdfs:subClassOf rdf:resource="http://etho.tk/loe#ExpressionGeneration"/>
+        <rdfs:comment xml:lang="en">same as differance</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://etho.tk/loe#EthotecturalCommunication -->
 
     <owl:Class rdf:about="http://etho.tk/loe#EthotecturalCommunication">
@@ -682,6 +691,7 @@
     <!-- http://etho.tk/loe#Expressiveness -->
 
     <owl:Class rdf:about="http://etho.tk/loe#Expressiveness">
+        <owl:equivalentClass rdf:resource="http://etho.tk/loe#Data&amp;Statistics"/>
         <rdfs:comment xml:lang="en">This must be related to statistics</rdfs:comment>
     </owl:Class>
     
@@ -784,15 +794,6 @@
     
 
 
-    <!-- http://etho.tk/loe#Subtraction -->
-
-    <owl:Class rdf:about="http://etho.tk/loe#Subtraction">
-        <rdfs:subClassOf rdf:resource="http://etho.tk/loe#ExpressionGeneration"/>
-        <rdfs:comment xml:lang="en">same as differance</rdfs:comment>
-    </owl:Class>
-    
-
-
     <!-- http://etho.tk/loe#UnprocessedStatement -->
 
     <owl:Class rdf:about="http://etho.tk/loe#UnprocessedStatement">
@@ -806,6 +807,12 @@
     <owl:Class rdf:about="http://etho.tk/loe#View">
         <rdfs:subClassOf rdf:resource="http://etho.tk/loe#Addition"/>
     </owl:Class>
+    
+
+
+    <!-- http://etho.tk/loe#Data&amp;Statistics -->
+
+    <owl:Class rdf:about="http://etho.tk/loe#Data&amp;Statistics"/>
     
 
 
