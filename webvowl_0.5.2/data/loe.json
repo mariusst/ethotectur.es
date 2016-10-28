@@ -218,7 +218,31 @@
         "IRI-based" : "transgression-stt"
       },
       "annotations" : { }
-    } ]
+    }, {
+      "iri" : "https://www.youtube.com/embed/wEqmPFQtZhg?start=15&autoplay=1",
+      "labels" : {
+        "IRI-based" : "reteaua-video-stt"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "https://www.youtube.com/embed/wEqmPFQtZhg?start=60&autoplay=1",
+      "labels" : {
+        "IRI-based" : "actiunea-structura-video-stt"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "https://www.youtube.com/embed/wEqmPFQtZhg?start=96&autoplay=1",
+      "labels" : {
+        "IRI-based" : "calendar-planuri-video-stt"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "https://www.youtube.com/embed/wEqmPFQtZhg?start=168&autoplay=1",
+      "labels" : {
+        "IRI-based" : "fiinta-prezenta-video-stt"
+      },
+      "annotations" : { }
+    }]
   }, {
     "id" : "class3",
     "label" : {
