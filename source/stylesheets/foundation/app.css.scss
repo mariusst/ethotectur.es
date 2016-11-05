@@ -41,3 +41,26 @@
 
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+
+/////////////////////////////////////////
+
+// doar-maine-2
+
+@include breakpoint(small) {
+  @include grid-context(24) {
+    .col24-offset1-4 {     
+        @include grid-column-offset(1);
+        @include grid-column(4);
+    }
+    .col24-offset1-4-end {     
+        @include grid-column-offset(1);
+        @include grid-column(4);
+        @include grid-column-end;
+    }
+    .col24-offset14-4 {     
+        @include grid-column-offset(14);
+        @include grid-column(4);
+    }
+  }
+}
