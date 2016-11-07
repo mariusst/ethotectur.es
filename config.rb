@@ -50,3 +50,7 @@ Slim::Engine.set_options :pretty => true
 
 # Set template languages
 set :slim, :layout_engine => :slim
+
+activate :google_analytics do |ga|
+  ga.tracking_id = 'UA-86928693-1' # Replace with your property ID.
+end
