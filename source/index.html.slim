@@ -8,35 +8,46 @@ title: "etho.tk home"
       a(href="/") etho.tk
  
 hr
- 
+
 .row
-  .small-12.columns
-    .row
-      .small-6.columns
-        h5 About
-        .primary.callout
-          p
-            a(href="/") etho.tk 
-            | is an online project created by 
-            a href="mailto:mariustoica@gmail.com"  Marius Stoica 
-            | in collaboration with
-            a href="mailto:nita.stoica@gmail.com"  Nita Mocanu. 
-            | The aim is to create and to present theoretical and artistic works at the crossroads of contemporary art, contemporary philosophy (especially speculative realism and experimental philosophy) and technology (especially semantic web technology). The source code for 
-            a(href="/") etho.tk 
-            | can be found on 
-            a(href="https://github.com/mariusst/etho.tk") GitHub
-      .small-6.columns
-        h5 Works
-        .primary.callout
-          p
-            a(href="/network-expressions")
-              img(src="/images/net-exp-thumb.jpg") 
-              b  Network expressions
-        .primary.callout
-          p
-            a(href="/doar-maine-2/")
-              img(src="/images/doar-maine-2.jpg") 
-              b  Doar mâine II
+  .medium-8.columns
+    h5 Works
+    .row.collapse
+      .medium-3.columns
+        ul#example-vert-tabs.tabs.vertical data-tabs="" 
+          li.tabs-title.is-active
+            a aria-selected="true" href="#panel1v"
+              b Doar mâine II
+          li.tabs-title
+            a href="#panel2v"
+              b Network expressions
+
+      .medium-9.columns
+        .tabs-content.vertical data-tabs-content="example-vert-tabs" 
+          #panel1v.tabs-panel.is-active
+            p
+              a(href="/doar-maine-2/")
+                img(src="/images/doar-maine-2.jpg") 
+                b  Doar mâine II
+          #panel2v.tabs-panel
+            p
+              a(href="/network-expressions")
+                img(src="/images/net-exp-thumb.jpg") 
+                b  Network expressions
+  
+  .medium-4.columns
+    h5 About
+    .secondary.callout
+      p
+        a(href="/") etho.tk 
+        | is an online project created by 
+        a href="mailto:mariustoica@gmail.com"  Marius Stoica 
+        | in collaboration with
+        a href="mailto:nita.stoica@gmail.com"  Nita Mocanu. 
+        | The aim is to create and to present theoretical and artistic works at the crossroads of contemporary art, contemporary philosophy (especially speculative realism and experimental philosophy) and technology (especially semantic web technology). The source code for 
+        a(href="/") etho.tk 
+        | can be found on 
+        a(href="https://github.com/mariusst/etho.tk") GitHub    
 
 hr
 
