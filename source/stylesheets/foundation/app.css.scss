@@ -45,6 +45,15 @@
 
 /////////////////////////////////////////
 
+// common
+
+p {
+  font-size: rem-calc(12);
+}
+
+
+
+
 // doar-maine-2
 
 @include breakpoint(small) {

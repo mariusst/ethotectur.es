@@ -1,3 +1,23 @@
+// common
+
+body {
+  font-family: Verdana, Geneva, sans-serif;
+  font-family: Tahoma, Segoe, sans-serif;
+}
+
+
+
+
+// homepage
+
+//fix plusminus
+.accordion-title::before {
+	content: "";
+}
+.is-active > .accordion-title::before {
+    content: "";
+}
+
 //network-expressions
 
 #vowl {
