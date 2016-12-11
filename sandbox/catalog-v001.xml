@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://purl.org/NET/c4dm/event.owl" uri="http://motools.sf.net/event/event.n3"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1479241790411" name="http://etho.tk/ewo-core" uri="ewo-core.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1479241790411" name="duplicate:http://etho.tk/loe" uri="loe008b1001.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1479241790411" name="duplicate:http://etho.tk/loe" uri="loe008.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1479241790411" name="duplicate:http://etho.tk/loe" uri="loe008b1002.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1479241790411" name="http://etho.tk/ne" uri="ne.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1481218192105" name="http://etho.tk/ewo-core" uri="ewo-core.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1481218192105" name="duplicate:http://etho.tk/loe" uri="loe008b1001.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1481218192105" name="duplicate:http://etho.tk/loe" uri="loe008.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1481218192105" name="duplicate:http://etho.tk/loe" uri="loe008b1002.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1481218192105" name="http://etho.tk/ne" uri="ne.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1481218192105" name="http://etho.tk/neo/" uri="neo.owl"/>
     </group>
 </catalog>

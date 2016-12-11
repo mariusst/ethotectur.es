@@ -1,0 +1,465 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://etho.tk/neo/"
+     xml:base="http://etho.tk/neo/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:neo="http://etho.tk/neo#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://etho.tk/neo">
+        <owl:versionInfo xml:lang="en">1.0</owl:versionInfo>
+        <dc:title xml:lang="en">Network Expressions</dc:title>
+        <dc:creator xml:lang="en">Marius Stoica</dc:creator>
+        <dc:description xml:lang="en">Network Expressions is a Semantic Web Ontology for the Expressiveness of the World. The Expressive World is a theoretical model of information, communication and knowledge representation based on various non-anthropocentric concepts and theories retrieved or developed from phenomenology, post-structuralist philosophy, ANT theory, speculative realism and object-oriented ontology.</dc:description>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://etho.tk/neo#accountOf -->
+
+    <owl:ObjectProperty rdf:about="http://etho.tk/neo#accountOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://etho.tk/neo#accountedBy"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://etho.tk/neo#Account"/>
+        <rdfs:range rdf:resource="http://etho.tk/neo#Statement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://etho.tk/neo#accountedBy -->
+
+    <owl:ObjectProperty rdf:about="http://etho.tk/neo#accountedBy">
+        <rdfs:domain rdf:resource="http://etho.tk/neo#Statement"/>
+        <rdfs:range rdf:resource="http://etho.tk/neo#Account"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://etho.tk/neo#argumentOf -->
+
+    <owl:ObjectProperty rdf:about="http://etho.tk/neo#argumentOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://etho.tk/neo#argumentedBy"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://etho.tk/neo#Argument"/>
+        <rdfs:range rdf:resource="http://etho.tk/neo#Account"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://etho.tk/neo#argumentedBy -->
+
+    <owl:ObjectProperty rdf:about="http://etho.tk/neo#argumentedBy">
+        <rdfs:domain rdf:resource="http://etho.tk/neo#Account"/>
+        <rdfs:range rdf:resource="http://etho.tk/neo#Argument"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://etho.tk/neo#expresses -->
+
+    <owl:ObjectProperty rdf:about="http://etho.tk/neo#expresses">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://etho.tk/neo#Being"/>
+        <rdfs:range rdf:resource="http://etho.tk/neo#Expression"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://etho.tk/neo#identifiesBeing -->
+
+    <owl:ObjectProperty rdf:about="http://etho.tk/neo#identifiesBeing">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://etho.tk/neo#Statement"/>
+        <rdfs:range rdf:resource="http://etho.tk/neo#Being"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://etho.tk/neo#identifiesCommunication -->
+
+    <owl:ObjectProperty rdf:about="http://etho.tk/neo#identifiesCommunication">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://etho.tk/neo#Argument"/>
+        <rdfs:range rdf:resource="http://etho.tk/neo#Communication"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://etho.tk/neo#identifiesEvent -->
+
+    <owl:ObjectProperty rdf:about="http://etho.tk/neo#identifiesEvent">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://etho.tk/neo#Account"/>
+        <rdfs:range rdf:resource="http://etho.tk/neo#Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://etho.tk/neo#includes -->
+
+    <owl:ObjectProperty rdf:about="http://etho.tk/neo#includes">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://etho.tk/neo#Communication"/>
+        <rdfs:range rdf:resource="http://etho.tk/neo#Expression"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://etho.tk/neo#marks -->
+
+    <owl:ObjectProperty rdf:about="http://etho.tk/neo#marks">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://etho.tk/neo#Event"/>
+        <rdfs:range rdf:resource="http://etho.tk/neo#Expression"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://etho.tk/neo#Account -->
+
+    <owl:Class rdf:about="http://etho.tk/neo#Account">
+        <rdfs:subClassOf rdf:resource="http://etho.tk/neo#Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://etho.tk/neo#Argument -->
+
+    <owl:Class rdf:about="http://etho.tk/neo#Argument">
+        <rdfs:subClassOf rdf:resource="http://etho.tk/neo#Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://etho.tk/neo#Being -->
+
+    <owl:Class rdf:about="http://etho.tk/neo#Being">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <owl:disjointWith rdf:resource="http://etho.tk/neo#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://etho.tk/neo#Communication -->
+
+    <owl:Class rdf:about="http://etho.tk/neo#Communication">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <owl:disjointWith rdf:resource="http://etho.tk/neo#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://etho.tk/neo#Event -->
+
+    <owl:Class rdf:about="http://etho.tk/neo#Event">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <owl:disjointWith rdf:resource="http://etho.tk/neo#Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://etho.tk/neo#Expression -->
+
+    <owl:Class rdf:about="http://etho.tk/neo#Expression"/>
+    
+
+
+    <!-- http://etho.tk/neo#Statement -->
+
+    <owl:Class rdf:about="http://etho.tk/neo#Statement">
+        <rdfs:subClassOf rdf:resource="http://etho.tk/neo#Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://etho.tk/neotwork-expressions/etotectura.html -->
+
+    <owl:NamedIndividual rdf:about="http://etho.tk/neotwork-expressions/etotectura.html">
+        <rdf:type rdf:resource="http://etho.tk/neo#Statement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://etho.tk/neotwork-expressions/etotectura.html#comunicarea-orient-obiect-arg -->
+
+    <owl:NamedIndividual rdf:about="http://etho.tk/neotwork-expressions/etotectura.html#comunicarea-orient-obiect-arg">
+        <rdf:type rdf:resource="http://etho.tk/neo#Argument"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://etho.tk/neotwork-expressions/etotectura.html#cruel-reality-acc -->
+
+    <owl:NamedIndividual rdf:about="http://etho.tk/neotwork-expressions/etotectura.html#cruel-reality-acc">
+        <rdf:type rdf:resource="http://etho.tk/neo#Account"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://etho.tk/neotwork-expressions/etotectura.html#devenirea-bloc-stt -->
+
+    <owl:NamedIndividual rdf:about="http://etho.tk/neotwork-expressions/etotectura.html#devenirea-bloc-stt">
+        <rdf:type rdf:resource="http://etho.tk/neo#Statement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://etho.tk/neotwork-expressions/etotectura.html#etotectura-arg -->
+
+    <owl:NamedIndividual rdf:about="http://etho.tk/neotwork-expressions/etotectura.html#etotectura-arg">
+        <rdf:type rdf:resource="http://etho.tk/neo#Argument"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://etho.tk/neotwork-expressions/etotectura.html#no-sufficient-reason-acc -->
+
+    <owl:NamedIndividual rdf:about="http://etho.tk/neotwork-expressions/etotectura.html#no-sufficient-reason-acc">
+        <rdf:type rdf:resource="http://etho.tk/neo#Account"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://etho.tk/neotwork-expressions/etotectura.html#no-sufficient-reason-stt -->
+
+    <owl:NamedIndividual rdf:about="http://etho.tk/neotwork-expressions/etotectura.html#no-sufficient-reason-stt">
+        <rdf:type rdf:resource="http://etho.tk/neo#Statement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://etho.tk/neotwork-expressions/etotectura.html#outside-well-being-arg -->
+
+    <owl:NamedIndividual rdf:about="http://etho.tk/neotwork-expressions/etotectura.html#outside-well-being-arg">
+        <rdf:type rdf:resource="http://etho.tk/neo#Argument"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://etho.tk/neotwork-expressions/etotectura.html#pasibil-stt -->
+
+    <owl:NamedIndividual rdf:about="http://etho.tk/neotwork-expressions/etotectura.html#pasibil-stt">
+        <rdf:type rdf:resource="http://etho.tk/neo#Statement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://etho.tk/neotwork-expressions/etotectura.html#transgression-exp -->
+
+    <owl:NamedIndividual rdf:about="http://etho.tk/neotwork-expressions/etotectura.html#transgression-exp"/>
+    
+
+
+    <!-- http://etho.tk/neotwork-expressions/etotectura.html#transgression-stt -->
+
+    <owl:NamedIndividual rdf:about="http://etho.tk/neotwork-expressions/etotectura.html#transgression-stt">
+        <rdf:type rdf:resource="http://etho.tk/neo#Statement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://etho.tk/neotwork-expressions/etotectura.html#transgression-tech-acc -->
+
+    <owl:NamedIndividual rdf:about="http://etho.tk/neotwork-expressions/etotectura.html#transgression-tech-acc">
+        <rdf:type rdf:resource="http://etho.tk/neo#Account"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://etho.tk/neotwork-expressions/etotectura.html#transgression-tech-exp -->
+
+    <owl:NamedIndividual rdf:about="http://etho.tk/neotwork-expressions/etotectura.html#transgression-tech-exp"/>
+    
+
+
+    <!-- http://etho.tk/neotwork-expressions/etotectura.html#umwelt-acc -->
+
+    <owl:NamedIndividual rdf:about="http://etho.tk/neotwork-expressions/etotectura.html#umwelt-acc">
+        <rdf:type rdf:resource="http://etho.tk/neo#Account"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://etho.tk/neotwork-expressions/etotectura.html#umwelt-def-stt -->
+
+    <owl:NamedIndividual rdf:about="http://etho.tk/neotwork-expressions/etotectura.html#umwelt-def-stt">
+        <rdf:type rdf:resource="http://etho.tk/neo#Statement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://etho.tk/neotwork-expressions/etotectura.html#umwelt-name-stt -->
+
+    <owl:NamedIndividual rdf:about="http://etho.tk/neotwork-expressions/etotectura.html#umwelt-name-stt">
+        <rdf:type rdf:resource="http://etho.tk/neo#Statement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://etho.tk/neotwork-expressions/etotectura.html#well-being-arg -->
+
+    <owl:NamedIndividual rdf:about="http://etho.tk/neotwork-expressions/etotectura.html#well-being-arg">
+        <rdf:type rdf:resource="http://etho.tk/neo#Argument"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.youtube.com/embed/wEqmPFQtZhg#t=1m -->
+
+    <owl:NamedIndividual rdf:about="https://www.youtube.com/embed/wEqmPFQtZhg#t=1m">
+        <rdf:type rdf:resource="http://etho.tk/neo#Statement"/>
+        <rdfs:label xml:lang="ro">actiune-structura-stt</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.youtube.com/embed/wEqmPFQtZhg#t=1m"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://etho.tk/neo#Statement"/>
+        <rdfs:label xml:lang="ro">actiune-structura-stt</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://www.youtube.com/embed/wEqmPFQtZhg#t=1m36s -->
+
+    <owl:NamedIndividual rdf:about="https://www.youtube.com/embed/wEqmPFQtZhg#t=1m36s">
+        <rdf:type rdf:resource="http://etho.tk/neo#Statement"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.youtube.com/embed/wEqmPFQtZhg#t=1m36s"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://etho.tk/neo#Statement"/>
+        <rdfs:label xml:lang="ro">calendar-planuri-stt</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://www.youtube.com/embed/wEqmPFQtZhg#t=15s -->
+
+    <owl:NamedIndividual rdf:about="https://www.youtube.com/embed/wEqmPFQtZhg#t=15s">
+        <rdf:type rdf:resource="http://etho.tk/neo#Statement"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.youtube.com/embed/wEqmPFQtZhg#t=15s"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://etho.tk/neo#Statement"/>
+        <rdfs:label xml:lang="ro">reteaua-stt</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://www.youtube.com/embed/wEqmPFQtZhg#t=2m48s -->
+
+    <owl:NamedIndividual rdf:about="https://www.youtube.com/embed/wEqmPFQtZhg#t=2m48s">
+        <rdf:type rdf:resource="http://etho.tk/neo#Statement"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.youtube.com/embed/wEqmPFQtZhg#t=2m48s"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://etho.tk/neo#Statement"/>
+        <rdfs:label xml:lang="ro">fiinta-prezenta-stt</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://www.youtube.com/embed/wEqmPFQtZhg#t=3m25s -->
+
+    <owl:NamedIndividual rdf:about="https://www.youtube.com/embed/wEqmPFQtZhg#t=3m25s"/>
+    
+
+
+    <!-- https://youtu.be/wEqmPFQtZhg -->
+
+    <owl:NamedIndividual rdf:about="https://youtu.be/wEqmPFQtZhg">
+        <rdf:type rdf:resource="http://etho.tk/neo#Statement"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://youtu.be/wEqmPFQtZhg"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://etho.tk/neo#Statement"/>
+        <rdfs:label>Era deja acolo [video]</rdfs:label>
+    </owl:Axiom>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+
