@@ -15,3 +15,4 @@ gem 'middleman-livereload'
 gem 'mgd'
 gem 'slim'
 gem 'middleman-google-analytics', '~> 2.1'
+
