@@ -23,152 +23,152 @@
     
 
 
-    <!-- http://etho.tk/ewo#expresses -->
+    <!-- http://etho.tk/ewo#accountOf -->
 
-    <owl:ObjectProperty rdf:about="http://etho.tk/ewo#expresses">
-        <owl:inverseOf rdf:resource="http://etho.tk/ewo/expressedBy"/>
-        <rdfs:domain rdf:resource="http://etho.tk/ewo#Being"/>
-        <rdfs:range rdf:resource="http://etho.tk/ewo#Expression"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://etho.tk/ewo/accountOf -->
-
-    <owl:ObjectProperty rdf:about="http://etho.tk/ewo/accountOf">
-        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo/processingOf"/>
+    <owl:ObjectProperty rdf:about="http://etho.tk/ewo#accountOf">
+        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo#processingOf"/>
         <rdfs:domain rdf:resource="http://etho.tk/ewo#Account"/>
         <rdfs:range rdf:resource="http://etho.tk/ewo#Statement"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://etho.tk/ewo/amalgamatedWithin -->
+    <!-- http://etho.tk/ewo#amalgamatedWithin -->
 
-    <owl:ObjectProperty rdf:about="http://etho.tk/ewo/amalgamatedWithin">
-        <owl:inverseOf rdf:resource="http://etho.tk/ewo/amalgamates"/>
+    <owl:ObjectProperty rdf:about="http://etho.tk/ewo#amalgamatedWithin">
+        <owl:inverseOf rdf:resource="http://etho.tk/ewo#amalgamates"/>
         <rdfs:domain rdf:resource="http://etho.tk/ewo#Being"/>
         <rdfs:range rdf:resource="http://etho.tk/ewo#Ontotecture"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://etho.tk/ewo/amalgamates -->
+    <!-- http://etho.tk/ewo#amalgamates -->
 
-    <owl:ObjectProperty rdf:about="http://etho.tk/ewo/amalgamates">
+    <owl:ObjectProperty rdf:about="http://etho.tk/ewo#amalgamates">
         <rdfs:domain rdf:resource="http://etho.tk/ewo#Ontotecture"/>
         <rdfs:range rdf:resource="http://etho.tk/ewo#Being"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://etho.tk/ewo/argumentOf -->
+    <!-- http://etho.tk/ewo#argumentOf -->
 
-    <owl:ObjectProperty rdf:about="http://etho.tk/ewo/argumentOf">
-        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo/collectionOf"/>
+    <owl:ObjectProperty rdf:about="http://etho.tk/ewo#argumentOf">
+        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo#collectionOf"/>
         <rdfs:domain rdf:resource="http://etho.tk/ewo#Argument"/>
         <rdfs:range rdf:resource="http://etho.tk/ewo#Statement"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://etho.tk/ewo/collectionOf -->
+    <!-- http://etho.tk/ewo#collectionOf -->
 
-    <owl:ObjectProperty rdf:about="http://etho.tk/ewo/collectionOf">
-        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo/processingOf"/>
+    <owl:ObjectProperty rdf:about="http://etho.tk/ewo#collectionOf">
+        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo#processingOf"/>
         <rdfs:domain rdf:resource="http://etho.tk/ewo#Collection"/>
         <rdfs:range rdf:resource="http://etho.tk/ewo#Statement"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://etho.tk/ewo/expressedBy -->
+    <!-- http://etho.tk/ewo#expressedBy -->
 
-    <owl:ObjectProperty rdf:about="http://etho.tk/ewo/expressedBy">
+    <owl:ObjectProperty rdf:about="http://etho.tk/ewo#expressedBy">
+        <owl:inverseOf rdf:resource="http://etho.tk/ewo#expresses"/>
         <rdfs:domain rdf:resource="http://etho.tk/ewo#Expression"/>
         <rdfs:range rdf:resource="http://etho.tk/ewo#Being"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://etho.tk/ewo/hasOntotecture -->
+    <!-- http://etho.tk/ewo#expresses -->
 
-    <owl:ObjectProperty rdf:about="http://etho.tk/ewo/hasOntotecture">
+    <owl:ObjectProperty rdf:about="http://etho.tk/ewo#expresses">
+        <rdfs:domain rdf:resource="http://etho.tk/ewo#Being"/>
+        <rdfs:range rdf:resource="http://etho.tk/ewo#Expression"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://etho.tk/ewo#hasOntotecture -->
+
+    <owl:ObjectProperty rdf:about="http://etho.tk/ewo#hasOntotecture">
         <rdfs:domain rdf:resource="http://etho.tk/ewo#Communication"/>
         <rdfs:range rdf:resource="http://etho.tk/ewo#Ontotecture"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://etho.tk/ewo/includedIn -->
+    <!-- http://etho.tk/ewo#includedIn -->
 
-    <owl:ObjectProperty rdf:about="http://etho.tk/ewo/includedIn">
-        <owl:inverseOf rdf:resource="http://etho.tk/ewo/includes"/>
+    <owl:ObjectProperty rdf:about="http://etho.tk/ewo#includedIn">
+        <owl:inverseOf rdf:resource="http://etho.tk/ewo#includes"/>
         <rdfs:domain rdf:resource="http://etho.tk/ewo#Expression"/>
         <rdfs:range rdf:resource="http://etho.tk/ewo#Event"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://etho.tk/ewo/includes -->
+    <!-- http://etho.tk/ewo#includes -->
 
-    <owl:ObjectProperty rdf:about="http://etho.tk/ewo/includes">
+    <owl:ObjectProperty rdf:about="http://etho.tk/ewo#includes">
         <rdfs:domain rdf:resource="http://etho.tk/ewo#Communication"/>
         <rdfs:range rdf:resource="http://etho.tk/ewo#Expression"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://etho.tk/ewo/markedBy -->
+    <!-- http://etho.tk/ewo#markedBy -->
 
-    <owl:ObjectProperty rdf:about="http://etho.tk/ewo/markedBy">
-        <owl:inverseOf rdf:resource="http://etho.tk/ewo/marks"/>
+    <owl:ObjectProperty rdf:about="http://etho.tk/ewo#markedBy">
+        <owl:inverseOf rdf:resource="http://etho.tk/ewo#marks"/>
         <rdfs:domain rdf:resource="http://etho.tk/ewo#Expression"/>
         <rdfs:range rdf:resource="http://etho.tk/ewo#Event"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://etho.tk/ewo/marks -->
+    <!-- http://etho.tk/ewo#marks -->
 
-    <owl:ObjectProperty rdf:about="http://etho.tk/ewo/marks">
+    <owl:ObjectProperty rdf:about="http://etho.tk/ewo#marks">
         <rdfs:domain rdf:resource="http://etho.tk/ewo#Event"/>
         <rdfs:range rdf:resource="http://etho.tk/ewo#Expression"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://etho.tk/ewo/partialOf -->
+    <!-- http://etho.tk/ewo#partialOf -->
 
-    <owl:ObjectProperty rdf:about="http://etho.tk/ewo/partialOf">
-        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo/processingOf"/>
+    <owl:ObjectProperty rdf:about="http://etho.tk/ewo#partialOf">
+        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo#processingOf"/>
         <rdfs:domain rdf:resource="http://etho.tk/ewo#VirtualExpression"/>
         <rdfs:range rdf:resource="http://etho.tk/ewo#Statement"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://etho.tk/ewo/performanceOf -->
+    <!-- http://etho.tk/ewo#performanceOf -->
 
-    <owl:ObjectProperty rdf:about="http://etho.tk/ewo/performanceOf">
+    <owl:ObjectProperty rdf:about="http://etho.tk/ewo#performanceOf">
         <rdfs:range rdf:resource="http://etho.tk/ewo#ProcessedExpression"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://etho.tk/ewo/processingOf -->
+    <!-- http://etho.tk/ewo#processingOf -->
 
-    <owl:ObjectProperty rdf:about="http://etho.tk/ewo/processingOf">
+    <owl:ObjectProperty rdf:about="http://etho.tk/ewo#processingOf">
         <rdfs:domain rdf:resource="http://etho.tk/ewo#ProcessedExpression"/>
         <rdfs:range rdf:resource="http://etho.tk/ewo#Statement"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://etho.tk/ewo/repeteOf -->
+    <!-- http://etho.tk/ewo#repeteOf -->
 
-    <owl:ObjectProperty rdf:about="http://etho.tk/ewo/repeteOf">
-        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo/processingOf"/>
+    <owl:ObjectProperty rdf:about="http://etho.tk/ewo#repeteOf">
+        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo#processingOf"/>
         <rdfs:domain rdf:resource="http://etho.tk/ewo#RepetedExpression"/>
         <rdfs:range rdf:resource="http://etho.tk/ewo#Statement"/>
     </owl:ObjectProperty>
@@ -186,280 +186,280 @@
     
 
 
-    <!-- http://etho.tk/ewo/hasAmountOfSubstance -->
+    <!-- http://etho.tk/ewo#hasAmountOfSubstance -->
 
-    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo/hasAmountOfSubstance">
-        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo/hasMesurements"/>
+    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo#hasAmountOfSubstance">
+        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo#hasMesurements"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://etho.tk/ewo/hasApproximationToPresent -->
+    <!-- http://etho.tk/ewo#hasApproximationToPresent -->
 
-    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo/hasApproximationToPresent">
-        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo/hasTimeCoordinates"/>
+    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo#hasApproximationToPresent">
+        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo#hasTimeCoordinates"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://etho.tk/ewo/hasArea -->
+    <!-- http://etho.tk/ewo#hasArea -->
 
-    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo/hasArea">
-        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo/hasSpaceMesuremnts"/>
+    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo#hasArea">
+        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo#hasSpaceMesuremnts"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://etho.tk/ewo/hasBeingsCount -->
+    <!-- http://etho.tk/ewo#hasBeingsCount -->
 
-    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo/hasBeingsCount">
-        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo/hasPartsCount"/>
+    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo#hasBeingsCount">
+        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo#hasPartsCount"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://etho.tk/ewo/hasCoordinates -->
+    <!-- http://etho.tk/ewo#hasCoordinates -->
 
-    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo/hasCoordinates"/>
+    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo#hasCoordinates"/>
     
 
 
-    <!-- http://etho.tk/ewo/hasDepth -->
+    <!-- http://etho.tk/ewo#hasDepth -->
 
-    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo/hasDepth">
-        <owl:equivalentProperty rdf:resource="http://etho.tk/ewo/hasDistance"/>
-        <owl:equivalentProperty rdf:resource="http://etho.tk/ewo/hasHeight"/>
-        <owl:equivalentProperty rdf:resource="http://etho.tk/ewo/hasLenght"/>
-        <owl:equivalentProperty rdf:resource="http://etho.tk/ewo/hasWidth"/>
-        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo/hasSpaceMesuremnts"/>
+    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo#hasDepth">
+        <owl:equivalentProperty rdf:resource="http://etho.tk/ewo#hasDistance"/>
+        <owl:equivalentProperty rdf:resource="http://etho.tk/ewo#hasHeight"/>
+        <owl:equivalentProperty rdf:resource="http://etho.tk/ewo#hasLenght"/>
+        <owl:equivalentProperty rdf:resource="http://etho.tk/ewo#hasWidth"/>
+        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo#hasSpaceMesuremnts"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://etho.tk/ewo/hasDistance -->
+    <!-- http://etho.tk/ewo#hasDistance -->
 
-    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo/hasDistance">
-        <owl:equivalentProperty rdf:resource="http://etho.tk/ewo/hasHeight"/>
-        <owl:equivalentProperty rdf:resource="http://etho.tk/ewo/hasLenght"/>
-        <owl:equivalentProperty rdf:resource="http://etho.tk/ewo/hasWidth"/>
-        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo/hasSpaceMesuremnts"/>
+    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo#hasDistance">
+        <owl:equivalentProperty rdf:resource="http://etho.tk/ewo#hasHeight"/>
+        <owl:equivalentProperty rdf:resource="http://etho.tk/ewo#hasLenght"/>
+        <owl:equivalentProperty rdf:resource="http://etho.tk/ewo#hasWidth"/>
+        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo#hasSpaceMesuremnts"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://etho.tk/ewo/hasElectricCurrent -->
+    <!-- http://etho.tk/ewo#hasElectricCurrent -->
 
-    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo/hasElectricCurrent">
-        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo/hasMesurements"/>
+    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo#hasElectricCurrent">
+        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo#hasMesurements"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://etho.tk/ewo/hasGeographicCoordinates -->
+    <!-- http://etho.tk/ewo#hasGeographicCoordinates -->
 
-    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo/hasGeographicCoordinates">
-        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo/hasSpaceCoordinates"/>
+    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo#hasGeographicCoordinates">
+        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo#hasSpaceCoordinates"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://etho.tk/ewo/hasGregorianCalendarClockTimeZone -->
+    <!-- http://etho.tk/ewo#hasGregorianCalendarClockTimeZone -->
 
-    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo/hasGregorianCalendarClockTimeZone">
-        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo/hasTimeCoordinates"/>
+    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo#hasGregorianCalendarClockTimeZone">
+        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo#hasTimeCoordinates"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://etho.tk/ewo/hasHeight -->
+    <!-- http://etho.tk/ewo#hasHeight -->
 
-    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo/hasHeight">
-        <owl:equivalentProperty rdf:resource="http://etho.tk/ewo/hasLenght"/>
-        <owl:equivalentProperty rdf:resource="http://etho.tk/ewo/hasWidth"/>
-        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo/hasSpaceMesuremnts"/>
+    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo#hasHeight">
+        <owl:equivalentProperty rdf:resource="http://etho.tk/ewo#hasLenght"/>
+        <owl:equivalentProperty rdf:resource="http://etho.tk/ewo#hasWidth"/>
+        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo#hasSpaceMesuremnts"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://etho.tk/ewo/hasID -->
+    <!-- http://etho.tk/ewo#hasID -->
 
-    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo/hasID">
-        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo/hasName"/>
+    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo#hasID">
+        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo#hasName"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://etho.tk/ewo/hasInternetLocator -->
+    <!-- http://etho.tk/ewo#hasInternetLocator -->
 
-    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo/hasInternetLocator">
-        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo/hasVirtualCoordinates"/>
+    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo#hasInternetLocator">
+        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo#hasVirtualCoordinates"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://etho.tk/ewo/hasLatitudeLongitudeAltitude -->
+    <!-- http://etho.tk/ewo#hasLatitudeLongitudeAltitude -->
 
-    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo/hasLatitudeLongitudeAltitude">
-        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo/hasGeographicCoordinates"/>
+    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo#hasLatitudeLongitudeAltitude">
+        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo#hasGeographicCoordinates"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://etho.tk/ewo/hasLenght -->
+    <!-- http://etho.tk/ewo#hasLenght -->
 
-    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo/hasLenght">
-        <owl:equivalentProperty rdf:resource="http://etho.tk/ewo/hasWidth"/>
-        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo/hasSpaceMesuremnts"/>
+    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo#hasLenght">
+        <owl:equivalentProperty rdf:resource="http://etho.tk/ewo#hasWidth"/>
+        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo#hasSpaceMesuremnts"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://etho.tk/ewo/hasLuminousIntensity -->
+    <!-- http://etho.tk/ewo#hasLuminousIntensity -->
 
-    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo/hasLuminousIntensity">
-        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo/hasMesurements"/>
+    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo#hasLuminousIntensity">
+        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo#hasMesurements"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://etho.tk/ewo/hasMass -->
+    <!-- http://etho.tk/ewo#hasMass -->
 
-    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo/hasMass">
-        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo/hasMesurements"/>
+    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo#hasMass">
+        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo#hasMesurements"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://etho.tk/ewo/hasMesurements -->
+    <!-- http://etho.tk/ewo#hasMesurements -->
 
-    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo/hasMesurements"/>
+    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo#hasMesurements"/>
     
 
 
-    <!-- http://etho.tk/ewo/hasName -->
+    <!-- http://etho.tk/ewo#hasName -->
 
-    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo/hasName">
+    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo#hasName">
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://etho.tk/ewo/hasPartsCount -->
+    <!-- http://etho.tk/ewo#hasPartsCount -->
 
-    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo/hasPartsCount">
-        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo/hasMesurements"/>
+    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo#hasPartsCount">
+        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo#hasMesurements"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://etho.tk/ewo/hasPostAddress -->
+    <!-- http://etho.tk/ewo#hasPostAddress -->
 
-    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo/hasPostAddress">
-        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo/hasSpaceCoordinates"/>
+    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo#hasPostAddress">
+        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo#hasSpaceCoordinates"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://etho.tk/ewo/hasProcessingCoordinates -->
+    <!-- http://etho.tk/ewo#hasProcessingCoordinates -->
 
-    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo/hasProcessingCoordinates">
-        <owl:equivalentProperty rdf:resource="http://etho.tk/ewo/hasVirtualCoordinates"/>
-        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo/hasCoordinates"/>
+    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo#hasProcessingCoordinates">
+        <owl:equivalentProperty rdf:resource="http://etho.tk/ewo#hasVirtualCoordinates"/>
+        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo#hasCoordinates"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://etho.tk/ewo/hasSameBeingsCount -->
+    <!-- http://etho.tk/ewo#hasSameBeingsCount -->
 
-    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo/hasSameBeingsCount">
-        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo/hasBeingsCount"/>
+    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo#hasSameBeingsCount">
+        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo#hasBeingsCount"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://etho.tk/ewo/hasSamePartsCount -->
+    <!-- http://etho.tk/ewo#hasSamePartsCount -->
 
-    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo/hasSamePartsCount">
-        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo/hasPartsCount"/>
+    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo#hasSamePartsCount">
+        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo#hasPartsCount"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://etho.tk/ewo/hasSpaceCoordinates -->
+    <!-- http://etho.tk/ewo#hasSpaceCoordinates -->
 
-    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo/hasSpaceCoordinates">
-        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo/hasCoordinates"/>
+    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo#hasSpaceCoordinates">
+        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo#hasCoordinates"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://etho.tk/ewo/hasSpaceMesuremnts -->
+    <!-- http://etho.tk/ewo#hasSpaceMesuremnts -->
 
-    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo/hasSpaceMesuremnts">
-        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo/hasMesurements"/>
+    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo#hasSpaceMesuremnts">
+        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo#hasMesurements"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://etho.tk/ewo/hasTermodinamicTemperature -->
+    <!-- http://etho.tk/ewo#hasTermodinamicTemperature -->
 
-    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo/hasTermodinamicTemperature">
-        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo/hasMesurements"/>
+    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo#hasTermodinamicTemperature">
+        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo#hasMesurements"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://etho.tk/ewo/hasTimeCoordinates -->
+    <!-- http://etho.tk/ewo#hasTimeCoordinates -->
 
-    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo/hasTimeCoordinates">
-        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo/hasCoordinates"/>
+    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo#hasTimeCoordinates">
+        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo#hasCoordinates"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://etho.tk/ewo/hasTimeMesurements -->
+    <!-- http://etho.tk/ewo#hasTimeMesurements -->
 
-    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo/hasTimeMesurements">
-        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo/hasMesurements"/>
+    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo#hasTimeMesurements">
+        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo#hasMesurements"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://etho.tk/ewo/hasVirtualCoordinates -->
+    <!-- http://etho.tk/ewo#hasVirtualCoordinates -->
 
-    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo/hasVirtualCoordinates">
-        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo/hasCoordinates"/>
+    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo#hasVirtualCoordinates">
+        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo#hasCoordinates"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://etho.tk/ewo/hasVolume -->
+    <!-- http://etho.tk/ewo#hasVolume -->
 
-    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo/hasVolume">
-        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo/hasSpaceMesuremnts"/>
+    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo#hasVolume">
+        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo#hasSpaceMesuremnts"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://etho.tk/ewo/hasWebAddress -->
+    <!-- http://etho.tk/ewo#hasWebAddress -->
 
-    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo/hasWebAddress">
-        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo/hasInternetLocator"/>
+    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo#hasWebAddress">
+        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo#hasInternetLocator"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://etho.tk/ewo/hasWidth -->
+    <!-- http://etho.tk/ewo#hasWidth -->
 
-    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo/hasWidth">
-        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo/hasSpaceMesuremnts"/>
+    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo#hasWidth">
+        <rdfs:subPropertyOf rdf:resource="http://etho.tk/ewo#hasSpaceMesuremnts"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://etho.tk/ewo/is -->
+    <!-- http://etho.tk/ewo#is -->
 
-    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo/is">
+    <owl:DatatypeProperty rdf:about="http://etho.tk/ewo#is">
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
     
@@ -541,12 +541,20 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://etho.tk/ewo#Communication"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://etho.tk/ewo/includes"/>
+                        <owl:onProperty rdf:resource="http://etho.tk/ewo#includes"/>
                         <owl:someValuesFrom rdf:resource="http://etho.tk/ewo#ProcessedExpression"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://etho.tk/ewo#EcstaticStatement -->
+
+    <owl:Class rdf:about="http://etho.tk/ewo#EcstaticStatement">
+        <rdfs:subClassOf rdf:resource="http://etho.tk/ewo#Statement"/>
     </owl:Class>
     
 
@@ -560,8 +568,8 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://etho.tk/ewo#Ethotecture"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://etho.tk/ewo/includes"/>
-                        <owl:someValuesFrom rdf:resource="http://etho.tk/ewo/ProcessingPath"/>
+                        <owl:onProperty rdf:resource="http://etho.tk/ewo#includes"/>
+                        <owl:someValuesFrom rdf:resource="http://etho.tk/ewo#ProcessingPath"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -580,7 +588,7 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://etho.tk/ewo#Event"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://etho.tk/ewo/marks"/>
+                        <owl:onProperty rdf:resource="http://etho.tk/ewo#marks"/>
                         <owl:someValuesFrom rdf:resource="http://etho.tk/ewo#Expression"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -607,7 +615,7 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://etho.tk/ewo#Expression"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://etho.tk/ewo/expressedBy"/>
+                        <owl:onProperty rdf:resource="http://etho.tk/ewo#expressedBy"/>
                         <owl:someValuesFrom rdf:resource="http://etho.tk/ewo#Being"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -669,7 +677,7 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://etho.tk/ewo#Ontotecture"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://etho.tk/ewo/amalgamates"/>
+                        <owl:onProperty rdf:resource="http://etho.tk/ewo#amalgamates"/>
                         <owl:someValuesFrom rdf:resource="http://etho.tk/ewo#Being"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -697,7 +705,7 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://etho.tk/ewo#Performance"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://etho.tk/ewo/marks"/>
+                        <owl:onProperty rdf:resource="http://etho.tk/ewo#marks"/>
                         <owl:someValuesFrom rdf:resource="http://etho.tk/ewo#PerformedExpression"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -742,13 +750,21 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://etho.tk/ewo#Processing"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://etho.tk/ewo/marks"/>
+                        <owl:onProperty rdf:resource="http://etho.tk/ewo#marks"/>
                         <owl:someValuesFrom rdf:resource="http://etho.tk/ewo#ProcessedExpression"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://etho.tk/ewo#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://etho.tk/ewo#ProcessingPath -->
+
+    <owl:Class rdf:about="http://etho.tk/ewo#ProcessingPath">
+        <rdfs:subClassOf rdf:resource="http://etho.tk/ewo#RepetedExpression"/>
     </owl:Class>
     
 
@@ -802,12 +818,20 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://etho.tk/ewo#Transgression"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://etho.tk/ewo/marks"/>
-                        <owl:someValuesFrom rdf:resource="http://etho.tk/ewo/EcstaticStatement"/>
+                        <owl:onProperty rdf:resource="http://etho.tk/ewo#marks"/>
+                        <owl:someValuesFrom rdf:resource="http://etho.tk/ewo#EcstaticStatement"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://etho.tk/ewo#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://etho.tk/ewo#UnknownEvent -->
+
+    <owl:Class rdf:about="http://etho.tk/ewo#UnknownEvent">
         <rdfs:subClassOf rdf:resource="http://etho.tk/ewo#Event"/>
     </owl:Class>
     
@@ -833,30 +857,6 @@
     <!-- http://etho.tk/ewo#WellBeing -->
 
     <owl:Class rdf:about="http://etho.tk/ewo#WellBeing">
-        <rdfs:subClassOf rdf:resource="http://etho.tk/ewo#Event"/>
-    </owl:Class>
-    
-
-
-    <!-- http://etho.tk/ewo/EcstaticStatement -->
-
-    <owl:Class rdf:about="http://etho.tk/ewo/EcstaticStatement">
-        <rdfs:subClassOf rdf:resource="http://etho.tk/ewo#Statement"/>
-    </owl:Class>
-    
-
-
-    <!-- http://etho.tk/ewo/ProcessingPath -->
-
-    <owl:Class rdf:about="http://etho.tk/ewo/ProcessingPath">
-        <rdfs:subClassOf rdf:resource="http://etho.tk/ewo#RepetedExpression"/>
-    </owl:Class>
-    
-
-
-    <!-- http://etho.tk/ewo/UnknownEvent -->
-
-    <owl:Class rdf:about="http://etho.tk/ewo/UnknownEvent">
         <rdfs:subClassOf rdf:resource="http://etho.tk/ewo#Event"/>
     </owl:Class>
 </rdf:RDF>
