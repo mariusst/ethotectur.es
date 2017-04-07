@@ -1,0 +1,576 @@
+@prefix : <http://etho.tk/ewo/ewo.ttl> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ewo: <http://etho.tk/ewo/ewo.ttl> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://etho.tk/ewo/ewo.ttl> .
+
+<http://etho.tk/ewo/ewo.ttl> rdf:type owl:Ontology ;
+                              rdfs:comment "The \"Expressive World Ontology\" (EWO) is an OWL specification that implements a pseudo-animistic, process based, object-oriented knowledge representation system. The theory behind EWO is based on contemporary philosophy: poststructuralism (Deleuze and Foucault) and speculative realism. However, the EWO world view is modeled after indigenous animism and shamanism as defined in modern anthropology."@en ;
+                              dc:creator "Marius Stoica" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+dc:creator rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://etho.tk/ewo/ewo.ttl#accountOf
+:accountOf rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :processingOf ;
+           rdfs:domain :Account ;
+           rdfs:range :Statement .
+
+
+###  http://etho.tk/ewo/ewo.ttl#amalgamatedWithin
+:amalgamatedWithin rdf:type owl:ObjectProperty ;
+                   owl:inverseOf :amalgamates ;
+                   rdfs:domain :Being ;
+                   rdfs:range :Ontotecture .
+
+
+###  http://etho.tk/ewo/ewo.ttl#amalgamates
+:amalgamates rdf:type owl:ObjectProperty ;
+             rdfs:domain :Ontotecture ;
+             rdfs:range :Being .
+
+
+###  http://etho.tk/ewo/ewo.ttl#argumentOf
+:argumentOf rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :collectionOf ;
+            rdfs:domain :Argument ;
+            rdfs:range :Statement .
+
+
+###  http://etho.tk/ewo/ewo.ttl#collectionOf
+:collectionOf rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :processingOf ;
+              rdfs:domain :Collection ;
+              rdfs:range :Statement .
+
+
+###  http://etho.tk/ewo/ewo.ttl#expressedBy
+:expressedBy rdf:type owl:ObjectProperty ;
+             owl:inverseOf :expresses ;
+             rdfs:domain :Expression ;
+             rdfs:range :Being .
+
+
+###  http://etho.tk/ewo/ewo.ttl#expresses
+:expresses rdf:type owl:ObjectProperty ;
+           rdfs:domain :Being ;
+           rdfs:range :Expression .
+
+
+###  http://etho.tk/ewo/ewo.ttl#hasOntotecture
+:hasOntotecture rdf:type owl:ObjectProperty ;
+                rdfs:domain :Communication ;
+                rdfs:range :Ontotecture .
+
+
+###  http://etho.tk/ewo/ewo.ttl#includedIn
+:includedIn rdf:type owl:ObjectProperty ;
+            owl:inverseOf :includes ;
+            rdfs:domain :Expression ;
+            rdfs:range :Event .
+
+
+###  http://etho.tk/ewo/ewo.ttl#includes
+:includes rdf:type owl:ObjectProperty ;
+          rdfs:domain :Communication ;
+          rdfs:range :Expression .
+
+
+###  http://etho.tk/ewo/ewo.ttl#markedBy
+:markedBy rdf:type owl:ObjectProperty ;
+          owl:inverseOf :marks ;
+          rdfs:domain :Expression ;
+          rdfs:range :Event .
+
+
+###  http://etho.tk/ewo/ewo.ttl#marks
+:marks rdf:type owl:ObjectProperty ;
+       rdfs:domain :Event ;
+       rdfs:range :Expression .
+
+
+###  http://etho.tk/ewo/ewo.ttl#partialOf
+:partialOf rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :processingOf ;
+           rdfs:domain :VirtualExpression ;
+           rdfs:range :Statement .
+
+
+###  http://etho.tk/ewo/ewo.ttl#performanceOf
+:performanceOf rdf:type owl:ObjectProperty ;
+               rdfs:range :ProcessedExpression .
+
+
+###  http://etho.tk/ewo/ewo.ttl#processingOf
+:processingOf rdf:type owl:ObjectProperty ;
+              rdfs:domain :ProcessedExpression ;
+              rdfs:range :Statement .
+
+
+###  http://etho.tk/ewo/ewo.ttl#repeteOf
+:repeteOf rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :processingOf ;
+          rdfs:domain :RepetedExpression ;
+          rdfs:range :Statement .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://etho.tk/ewo/ewo.ttl#hasAmountOfSubstance
+:hasAmountOfSubstance rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf :hasMesurements .
+
+
+###  http://etho.tk/ewo/ewo.ttl#hasApproximationToPresent
+:hasApproximationToPresent rdf:type owl:DatatypeProperty ;
+                           rdfs:subPropertyOf :hasTimeCoordinates .
+
+
+###  http://etho.tk/ewo/ewo.ttl#hasArea
+:hasArea rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf :hasSpaceMesuremnts .
+
+
+###  http://etho.tk/ewo/ewo.ttl#hasBeingsCount
+:hasBeingsCount rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf :hasPartsCount .
+
+
+###  http://etho.tk/ewo/ewo.ttl#hasCoordinates
+:hasCoordinates rdf:type owl:DatatypeProperty .
+
+
+###  http://etho.tk/ewo/ewo.ttl#hasDepth
+:hasDepth rdf:type owl:DatatypeProperty ;
+          owl:equivalentProperty :hasDistance ,
+                                 :hasHeight ,
+                                 :hasLenght ,
+                                 :hasWidth ;
+          rdfs:subPropertyOf :hasSpaceMesuremnts .
+
+
+###  http://etho.tk/ewo/ewo.ttl#hasDistance
+:hasDistance rdf:type owl:DatatypeProperty ;
+             owl:equivalentProperty :hasHeight ,
+                                    :hasLenght ,
+                                    :hasWidth ;
+             rdfs:subPropertyOf :hasSpaceMesuremnts .
+
+
+###  http://etho.tk/ewo/ewo.ttl#hasElectricCurrent
+:hasElectricCurrent rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf :hasMesurements .
+
+
+###  http://etho.tk/ewo/ewo.ttl#hasGeographicCoordinates
+:hasGeographicCoordinates rdf:type owl:DatatypeProperty ;
+                          rdfs:subPropertyOf :hasSpaceCoordinates .
+
+
+###  http://etho.tk/ewo/ewo.ttl#hasGregorianCalendarClockTimeZone
+:hasGregorianCalendarClockTimeZone rdf:type owl:DatatypeProperty ;
+                                   rdfs:subPropertyOf :hasTimeCoordinates .
+
+
+###  http://etho.tk/ewo/ewo.ttl#hasHeight
+:hasHeight rdf:type owl:DatatypeProperty ;
+           owl:equivalentProperty :hasLenght ,
+                                  :hasWidth ;
+           rdfs:subPropertyOf :hasSpaceMesuremnts .
+
+
+###  http://etho.tk/ewo/ewo.ttl#hasID
+:hasID rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf :hasName .
+
+
+###  http://etho.tk/ewo/ewo.ttl#hasInternetLocator
+:hasInternetLocator rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf :hasVirtualCoordinates .
+
+
+###  http://etho.tk/ewo/ewo.ttl#hasLatitudeLongitudeAltitude
+:hasLatitudeLongitudeAltitude rdf:type owl:DatatypeProperty ;
+                              rdfs:subPropertyOf :hasGeographicCoordinates .
+
+
+###  http://etho.tk/ewo/ewo.ttl#hasLenght
+:hasLenght rdf:type owl:DatatypeProperty ;
+           owl:equivalentProperty :hasWidth ;
+           rdfs:subPropertyOf :hasSpaceMesuremnts .
+
+
+###  http://etho.tk/ewo/ewo.ttl#hasLuminousIntensity
+:hasLuminousIntensity rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf :hasMesurements .
+
+
+###  http://etho.tk/ewo/ewo.ttl#hasMass
+:hasMass rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf :hasMesurements .
+
+
+###  http://etho.tk/ewo/ewo.ttl#hasMesurements
+:hasMesurements rdf:type owl:DatatypeProperty .
+
+
+###  http://etho.tk/ewo/ewo.ttl#hasName
+:hasName rdf:type owl:DatatypeProperty ;
+         rdfs:range rdfs:Literal .
+
+
+###  http://etho.tk/ewo/ewo.ttl#hasPartsCount
+:hasPartsCount rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf :hasMesurements .
+
+
+###  http://etho.tk/ewo/ewo.ttl#hasPostAddress
+:hasPostAddress rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf :hasSpaceCoordinates .
+
+
+###  http://etho.tk/ewo/ewo.ttl#hasProcessingCoordinates
+:hasProcessingCoordinates rdf:type owl:DatatypeProperty ;
+                          owl:equivalentProperty :hasVirtualCoordinates ;
+                          rdfs:subPropertyOf :hasCoordinates .
+
+
+###  http://etho.tk/ewo/ewo.ttl#hasSameBeingsCount
+:hasSameBeingsCount rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf :hasBeingsCount .
+
+
+###  http://etho.tk/ewo/ewo.ttl#hasSamePartsCount
+:hasSamePartsCount rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf :hasPartsCount .
+
+
+###  http://etho.tk/ewo/ewo.ttl#hasSpaceCoordinates
+:hasSpaceCoordinates rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf :hasCoordinates .
+
+
+###  http://etho.tk/ewo/ewo.ttl#hasSpaceMesuremnts
+:hasSpaceMesuremnts rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf :hasMesurements .
+
+
+###  http://etho.tk/ewo/ewo.ttl#hasTermodinamicTemperature
+:hasTermodinamicTemperature rdf:type owl:DatatypeProperty ;
+                            rdfs:subPropertyOf :hasMesurements .
+
+
+###  http://etho.tk/ewo/ewo.ttl#hasTimeCoordinates
+:hasTimeCoordinates rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf :hasCoordinates .
+
+
+###  http://etho.tk/ewo/ewo.ttl#hasTimeMesurements
+:hasTimeMesurements rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf :hasMesurements .
+
+
+###  http://etho.tk/ewo/ewo.ttl#hasVirtualCoordinates
+:hasVirtualCoordinates rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf :hasCoordinates .
+
+
+###  http://etho.tk/ewo/ewo.ttl#hasVolume
+:hasVolume rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf :hasSpaceMesuremnts .
+
+
+###  http://etho.tk/ewo/ewo.ttl#hasWebAddress
+:hasWebAddress rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf :hasInternetLocator .
+
+
+###  http://etho.tk/ewo/ewo.ttl#hasWidth
+:hasWidth rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf :hasSpaceMesuremnts .
+
+
+###  http://etho.tk/ewo/ewo.ttl#is
+:is rdf:type owl:DatatypeProperty ;
+    rdfs:range rdfs:Literal .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://etho.tk/ewo/ewo.ttl#Account
+:Account rdf:type owl:Class ;
+         owl:equivalentClass :RecursiveExpression ;
+         rdfs:subClassOf :ProcessedExpression ;
+         rdfs:comment "An \"Acount\" is an Expression that transports another Expression presented as \"on its own\"."@en .
+
+
+###  http://etho.tk/ewo/ewo.ttl#Argument
+:Argument rdf:type owl:Class ;
+          owl:equivalentClass :ViewExpression ;
+          rdfs:subClassOf :Collection ;
+          rdfs:comment "An \"Argument\" is a Collection of Expressions seen within a named Communication."@en .
+
+
+###  http://etho.tk/ewo/ewo.ttl#Being
+:Being rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :Being
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :expresses ;
+                                                    owl:someValuesFrom :Expression
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
+       rdfs:subClassOf :Ethotecture .
+
+
+###  http://etho.tk/ewo/ewo.ttl#Classification
+:Classification rdf:type owl:Class ;
+                rdfs:subClassOf :Argument ;
+                rdfs:comment "A \"Classifcation\" is a Collection of named Communications seen within a named Communication."@en .
+
+
+###  http://etho.tk/ewo/ewo.ttl#Collection
+:Collection rdf:type owl:Class ;
+            rdfs:subClassOf :ProcessedExpression ;
+            rdfs:comment "A \"Collection\" is a sum of Expressions."@en .
+
+
+###  http://etho.tk/ewo/ewo.ttl#Communication
+:Communication rdf:type owl:Class ;
+               owl:equivalentClass [ owl:intersectionOf ( :Communication
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty :includes ;
+                                                            owl:someValuesFrom :ProcessedExpression
+                                                          ]
+                                                        ) ;
+                                     rdf:type owl:Class
+                                   ] .
+
+
+###  http://etho.tk/ewo/ewo.ttl#EcstaticStatement
+:EcstaticStatement rdf:type owl:Class ;
+                   rdfs:subClassOf :Statement .
+
+
+###  http://etho.tk/ewo/ewo.ttl#Ethotecture
+:Ethotecture rdf:type owl:Class ;
+             owl:equivalentClass :PerformativeProcessing ,
+                                 [ owl:intersectionOf ( :Ethotecture
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty :includes ;
+                                                          owl:someValuesFrom :ProcessingPath
+                                                        ]
+                                                      ) ;
+                                   rdf:type owl:Class
+                                 ] ;
+             rdfs:subClassOf :Communication ;
+             rdfs:comment "The ethotecture is a concept that tries to capture the most important assumption on which shamnism and animsm are build, at least in philosophical context."@en .
+
+
+###  http://etho.tk/ewo/ewo.ttl#Event
+:Event rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :Event
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :marks ;
+                                                    owl:someValuesFrom :Expression
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] .
+
+
+###  http://etho.tk/ewo/ewo.ttl#Expectance
+:Expectance rdf:type owl:Class ;
+            rdfs:subClassOf :VirtualExpression ;
+            rdfs:comment "An Expression that is virtual."@en .
+
+
+###  http://etho.tk/ewo/ewo.ttl#Expression
+:Expression rdf:type owl:Class ;
+            owl:equivalentClass [ owl:intersectionOf ( :Expression
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty :expressedBy ;
+                                                         owl:someValuesFrom :Being
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ;
+            rdfs:comment "The \"Expression\" is the Foucauldian \"Statement\" relevant to the animistic/shamanistic discours."@en .
+
+
+###  http://etho.tk/ewo/ewo.ttl#ExpressionlessCollisionOfBeings
+:ExpressionlessCollisionOfBeings rdf:type owl:Class ;
+                                 owl:equivalentClass :Ontotecture .
+
+
+###  http://etho.tk/ewo/ewo.ttl#HiddenExpression
+:HiddenExpression rdf:type owl:Class ;
+                  owl:equivalentClass :VirtualExpression ;
+                  rdfs:subClassOf :ProcessedExpression ;
+                  rdfs:comment "An Expression that is implicit or missing."@en .
+
+
+###  http://etho.tk/ewo/ewo.ttl#ImplicitExpression
+:ImplicitExpression rdf:type owl:Class ;
+                    rdfs:subClassOf :VirtualExpression .
+
+
+###  http://etho.tk/ewo/ewo.ttl#MissingExpression
+:MissingExpression rdf:type owl:Class ;
+                   rdfs:subClassOf :VirtualExpression .
+
+
+###  http://etho.tk/ewo/ewo.ttl#Name
+:Name rdf:type owl:Class ;
+      rdfs:subClassOf :Account ;
+      rdfs:comment "A \"Name\" is an Acount used to mark things."@en .
+
+
+###  http://etho.tk/ewo/ewo.ttl#Ontotecture
+:Ontotecture rdf:type owl:Class ;
+             owl:equivalentClass [ owl:intersectionOf ( :Ontotecture
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty :amalgamates ;
+                                                          owl:someValuesFrom :Being
+                                                        ]
+                                                      ) ;
+                                   rdf:type owl:Class
+                                 ] ;
+             rdfs:comment "organe fara corp" .
+
+
+###  http://etho.tk/ewo/ewo.ttl#PartialExpression
+:PartialExpression rdf:type owl:Class ;
+                   rdfs:subClassOf :VirtualExpression .
+
+
+###  http://etho.tk/ewo/ewo.ttl#Performance
+:Performance rdf:type owl:Class ;
+             owl:equivalentClass :Survival ,
+                                 [ owl:intersectionOf ( :Performance
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty :marks ;
+                                                          owl:someValuesFrom :PerformedExpression
+                                                        ]
+                                                      ) ;
+                                   rdf:type owl:Class
+                                 ] ;
+             rdfs:subClassOf :Event .
+
+
+###  http://etho.tk/ewo/ewo.ttl#PerformativeProcessing
+:PerformativeProcessing rdf:type owl:Class .
+
+
+###  http://etho.tk/ewo/ewo.ttl#PerformedExpression
+:PerformedExpression rdf:type owl:Class ;
+                     owl:equivalentClass :Statement ;
+                     rdfs:subClassOf :Expression ;
+                     rdfs:comment "The \"Performed Expression\" is the Expression on its own."@en .
+
+
+###  http://etho.tk/ewo/ewo.ttl#ProcessedExpression
+:ProcessedExpression rdf:type owl:Class ;
+                     rdfs:subClassOf :Expression ;
+                     rdfs:comment "The \"Performed Expression\" is the Expression as part of a Communication."@en .
+
+
+###  http://etho.tk/ewo/ewo.ttl#Processing
+:Processing rdf:type owl:Class ;
+            owl:equivalentClass :WellBeing ,
+                                [ owl:intersectionOf ( :Processing
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty :marks ;
+                                                         owl:someValuesFrom :ProcessedExpression
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ;
+            rdfs:subClassOf :Event .
+
+
+###  http://etho.tk/ewo/ewo.ttl#ProcessingPath
+:ProcessingPath rdf:type owl:Class ;
+                rdfs:subClassOf :RepetedExpression .
+
+
+###  http://etho.tk/ewo/ewo.ttl#Question
+:Question rdf:type owl:Class ;
+          rdfs:subClassOf :Expectance ;
+          rdfs:comment "An Expression that is both virtual and partial."@en .
+
+
+###  http://etho.tk/ewo/ewo.ttl#RecursiveExpression
+:RecursiveExpression rdf:type owl:Class ;
+                     rdfs:subClassOf :ProcessedExpression .
+
+
+###  http://etho.tk/ewo/ewo.ttl#RepetedExpression
+:RepetedExpression rdf:type owl:Class ;
+                   rdfs:subClassOf :ProcessedExpression .
+
+
+###  http://etho.tk/ewo/ewo.ttl#Statement
+:Statement rdf:type owl:Class ;
+           rdfs:subClassOf :Expression .
+
+
+###  http://etho.tk/ewo/ewo.ttl#Survival
+:Survival rdf:type owl:Class ;
+          rdfs:subClassOf :Event .
+
+
+###  http://etho.tk/ewo/ewo.ttl#Transgression
+:Transgression rdf:type owl:Class ;
+               owl:equivalentClass [ owl:intersectionOf ( :Transgression
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty :marks ;
+                                                            owl:someValuesFrom :EcstaticStatement
+                                                          ]
+                                                        ) ;
+                                     rdf:type owl:Class
+                                   ] ;
+               rdfs:subClassOf :Event .
+
+
+###  http://etho.tk/ewo/ewo.ttl#UnknownEvent
+:UnknownEvent rdf:type owl:Class ;
+              rdfs:subClassOf :Event .
+
+
+###  http://etho.tk/ewo/ewo.ttl#ViewExpression
+:ViewExpression rdf:type owl:Class ;
+                rdfs:subClassOf :Collection .
+
+
+###  http://etho.tk/ewo/ewo.ttl#VirtualExpression
+:VirtualExpression rdf:type owl:Class ;
+                   rdfs:subClassOf :ProcessedExpression ;
+                   rdfs:comment "An Expression that is not yet present."@en .
+
+
+###  http://etho.tk/ewo/ewo.ttl#WellBeing
+:WellBeing rdf:type owl:Class ;
+           rdfs:subClassOf :Event .
+
+
+###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi
