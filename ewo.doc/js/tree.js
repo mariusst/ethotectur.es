@@ -1,0 +1,1 @@
+function showSubs(e){var l=document.getElementById(e);null!=l&&("none"==l.style.display?l.style.display="block":l.style.display="none");var n=document.getElementById(e+"-expand");null!=n&&("none"==n.style.display?n.style.display="inline":n.style.display="none")}

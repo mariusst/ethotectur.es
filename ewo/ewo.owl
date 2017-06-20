@@ -1,13 +1,14 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.org/ewo/"
-     xml:base="http://purl.org/ewo/"
+<rdf:RDF xmlns="http://calli.etho.tk/ewo/ontology.owl#"
+     xml:base="http://calli.etho.tk/ewo/ontology.owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:ewo="http://calli.etho.tk/ewo/ontology.owl#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <owl:Ontology rdf:about="http://purl.org/ewo">
+    <owl:Ontology rdf:about="http://calli.etho.tk/ewo/ontology.owl">
         <rdfs:comment xml:lang="en">The &quot;Expressive World Ontology&quot; (EWO) is an OWL specification that implements a pseudo-animistic, process based, object-oriented knowledge representation system. The theory behind EWO is based on contemporary philosophy: poststructuralism (Deleuze and Foucault) and speculative realism. However, the EWO world view is modeled after indigenous animism and shamanism as defined in modern anthropology.</rdfs:comment>
         <dc:creator>Marius Stoica</dc:creator>
     </owl:Ontology>
