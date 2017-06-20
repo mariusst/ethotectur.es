@@ -1,0 +1,12 @@
+doctype html
+html lang="en" 
+  head
+    meta charset="utf-8" /
+    meta content="ie=edge" http-equiv="x-ua-compatible" /
+    meta content="width=device-width, initial-scale=1.0" name="viewport" /
+    title= current_page.data.title || "etho.tk"
+    = stylesheet_link_tag 'foundation/app', 'style'
+  body class=page_classes 
+    = yield
+    = google_analytics_universal_tag
+    = javascript_include_tag 'vendor/jquery.min', 'vendor/what-input.min', 'vendor/foundation', 'app'
