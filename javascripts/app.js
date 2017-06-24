@@ -1,1 +1,1 @@
-$(document).foundation();var bLazy=new Blazy({});$("video").click(function(){$("video").each(function(){this.pause()})});
+$(document).foundation();var bLazy=new Blazy({});
