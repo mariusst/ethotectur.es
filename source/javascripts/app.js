@@ -18,3 +18,5 @@ document.addEventListener('play', function(e){
 $('video').click(function() {
     $("video").each(function () { this.pause() });
 });
+
+//click to play: onclick="this.paused ? this.play() : this.pause();"
