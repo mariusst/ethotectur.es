@@ -1,1 +1,1 @@
-$(document).foundation();
+$(document).foundation();var bLazy=new Blazy({});
