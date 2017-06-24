@@ -15,8 +15,8 @@ document.addEventListener('play', function(e){
 */
 
 // Pause all other HTML5 videos when a video is played
-$('video').click(function() {
-    $("video").each(function () { this.pause() });
-});
+//$('video').click(function() {
+//    $("video").each(function () { this.pause() });
+//});
 
 //click to play: onclick="this.paused ? this.play() : this.pause();"
