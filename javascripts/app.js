@@ -1,1 +1,1 @@
-$(document).foundation();var bLazy=new Blazy({});document.addEventListener("play",function(e){for(var n=document.getElementsByTagName("video"),t=0,a=n.length;a>t;t++)n[t]!=e.target&&n[t].pause()},!0);
+$(document).foundation();var bLazy=new Blazy({});$("video").click(function(){$("video").each(function(){this.pause()})});
