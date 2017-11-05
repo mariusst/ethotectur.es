@@ -4,7 +4,6 @@ title: "ar"
 ---
   
   a-scene arjs=("trackingMethod: best;") embedded="" 
-    a-assets
-      video#par autoplay="" loop="true" src="https://b2aeaa58a57a200320db-8b65b95250e902c437b256b5abf3eac7.ssl.cf5.rackcdn.com/media_entries/14463/Par.mp4" 
-    a-entity geometry="primitive: plane" material="src: #par"
+    a-anchor hit-testing-enabled="true" 
+      a-box material=("opacity: 0.5;") position=("0 0.5 0") 
     a-camera-static/
