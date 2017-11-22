@@ -3,7 +3,30 @@ layout: "ar"
 title: "ar"
 ---
   
-  a-scene arjs=("trackingMethod: best;") embedded="" 
-    a-anchor hit-testing-enabled="true" 
-      a-box material=("opacity: 0.5;") position=("0 0.5 0") 
-    a-camera-static/
+a-scene artoolkit=""
+  a-anchor hit-testing-enabled="true"
+    /!a-assets
+      /!a-mixin#marker geometry=("primitive: plane; width: 0.02; height: 0.02") material=("color: red") 
+    /!a-entity mixin="marker" position=("-2.5 0.7 0.01") 
+    /! Animations.
+    /!a-entity#opacity position=("-2.5 0.7 0") text=("color: white; align: center; value: Animating opacity; width: 1.5") 
+    /!a-entity mixin="marker" position=("0 0.7 0.01") 
+
+    
+    a-text#opacity value="IESIREA DIN ADAPOST TIP PS2050 SE FACE PRIN POARTA X20\nECHIPAMENT SPECIAL DE PROTECTIE SOLARA SUBTERAN NIVELUL 1" font="roboto" color="red"
+
+  a-camera-static preset="kanji"
+
+  
+javascript:
+  // Animate opacity.
+  var opacity = document.getElementById('opacity');
+  var obj = {opacity: 0};
+  var tween = new AFRAME.TWEEN.Tween(obj)
+    .to({opacity: 1}, 500)
+    .repeat( Infinity )
+    .yoyo( true )
+    .onUpdate(function () {
+      opacity.setAttribute('text', 'opacity', obj.opacity);
+    })
+    .start();
