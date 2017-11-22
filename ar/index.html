@@ -4,10 +4,28 @@
     <meta charset="utf-8" />
     <meta content="ie=edge" http-equiv="x-ua-compatible" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>ar</title><link href="/stylesheets/foundation/app.css" rel="stylesheet" /><link href="/stylesheets/style.css" rel="stylesheet" /><script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script><script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script>
+    <title>ar</title><link href="/stylesheets/foundation/app.css" rel="stylesheet" /><link href="/stylesheets/style.css" rel="stylesheet" /><script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script><script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script>
+    <style type="text/css">
+      #arjsDebugUIContainer, .a-enter-vr-button {display:none;}
+    </style>
+    <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script><script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script>
   </head>
   <body class="ar ar_index" style="margin : 0px; overflow: hidden;">
-    <a-scene arjs="trackingMethod: best;" embedded=""><a-anchor hit-testing-enabled="true"><a-box material="opacity: 0.5;" position="0 0.5 0"></a-box></a-anchor><a-camera-static /></a-scene><script type="text/javascript">
+    <a-scene artoolkit=""><a-anchor hit-testing-enabled="true"><!--a-assets
+        /!a-mixin#marker geometry=("primitive: plane; width: 0.02; height: 0.02") material=("color: red") --><!--a-entity mixin="marker" position=("-2.5 0.7 0.01") --><!--Animations.--><!--a-entity#opacity position=("-2.5 0.7 0") text=("color: white; align: center; value: Animating opacity; width: 1.5") --><!--a-entity mixin="marker" position=("0 0.7 0.01") --><a-text color="red" font="roboto" id="opacity" value="IESIREA DIN ADAPOST TIP PS2050 SE FACE PRIN POARTA X20\nECHIPAMENT SPECIAL DE PROTECTIE SOLARA SUBTERAN NIVELUL 1"></a-text></a-anchor><a-camera-static preset="kanji"></a-camera-static></a-scene>
+    <script>
+      // Animate opacity.
+      var opacity = document.getElementById('opacity');
+      var obj = {opacity: 0};
+      var tween = new AFRAME.TWEEN.Tween(obj)
+        .to({opacity: 1}, 500)
+        .repeat( Infinity )
+        .yoyo( true )
+        .onUpdate(function () {
+          opacity.setAttribute('text', 'opacity', obj.opacity);
+        })
+        .start();
+    </script><script type="text/javascript">
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
