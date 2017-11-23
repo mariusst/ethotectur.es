@@ -9,7 +9,19 @@ div style="position: fixed; top: 10px; width:100%; text-align: center; z-index: 
   | Contact me any time at
   a href="https://twitter.com/jerome_etienne" target="_blank"  @jerome_etienne
 a-scene arjs="sourceType: webcam; detectionMode: mono; maxDetectionRate: 30; canvasWidth: 240; canvasHeight: 180" embedded="" stats=""
-  a-box material="opacity: 0.5; side: double" position="0 0.5 0"
-    a-text#opacity value="IESIREA DIN ADAPOST TIP PS2050 SE FACE PRIN POARTA X20!\nECHIPAMENT SPECIAL DE PROTECTIE SOLARA, OBLIGATORIU!" font="roboto" color="red" 
-      a-animation attribute="rotation" dur="3000" easing="linear" repeat="indefinite" to="360 0 0"
+  a-text#opacity value="IESIREA DIN ADAPOST TIP PS2050 SE FACE PRIN POARTA X20!\nECHIPAMENT SPECIAL DE PROTECTIE SOLARA, OBLIGATORIU!" font="roboto" color="red" 
+      
   a-marker-camera preset="hiro"
+  
+  javascript:
+  // Animate opacity.
+  var opacity = document.getElementById('opacity');
+  var obj = {opacity: 0};
+  var tween = new AFRAME.TWEEN.Tween(obj)
+    .to({opacity: 1}, 500)
+    .repeat( Infinity )
+    .yoyo( true )
+    .onUpdate(function () {
+      opacity.setAttribute('text', 'opacity', obj.opacity);
+    })
+    .start();
