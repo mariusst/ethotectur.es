@@ -12,16 +12,3 @@ a-scene arjs="sourceType: webcam; detectionMode: mono; maxDetectionRate: 30; can
   a-text#opacity value="IESIREA DIN ADAPOST TIP PS2050 SE FACE PRIN POARTA X20!\nECHIPAMENT SPECIAL DE PROTECTIE SOLARA, OBLIGATORIU!" font="roboto" color="red" 
       
   a-marker-camera preset="hiro"
-  
-javascript:
-  // Animate opacity.
-  var opacity = document.getElementById('opacity');
-  var obj = {opacity: 0};
-  var tween = new AFRAME.TWEEN.Tween(obj)
-    .to({opacity: 1}, 500)
-    .repeat( Infinity )
-    .yoyo( true )
-    .onUpdate(function () {
-      opacity.setAttribute('text', 'opacity', obj.opacity);
-    })
-    .start();
