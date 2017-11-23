@@ -4,7 +4,7 @@ title: "ar"
 ---
   
 a-scene artoolkit=""
-  a-anchor hit-testing-enabled="false" type='pattern' url='patt.outside'
+  a-anchor hit-testing-enabled="false" preset="kanji"
     /!a-assets
       /!a-mixin#marker geometry=("primitive: plane; width: 0.02; height: 0.02") material=("color: red") 
     /!a-entity mixin="marker" position=("-2.5 0.7 0.01") 
@@ -12,7 +12,7 @@ a-scene artoolkit=""
     /!a-entity#opacity position=("-2.5 0.7 0") text=("color: white; align: center; value: Animating opacity; width: 1.5") 
     /!a-entity mixin="marker" position=("0 119.7 0.01") 
     
-    a-text#opacity value="_IESIREA DIN ADAPOST PS2050\nSE FACE PRIN POARTA X20!\n\n_OBLIGATORIU ECHIPAMENT\nDE PROTECTIE SOLARA!" font="exo2bold" anchor="left" position="-1.5 -0.7 0" rotation="-90 0 0" color="yellow"
+    a-text#opacity value="_IESIREA DIN ADAPOST PS2050\nSE FACE PRIN POARTA X20!\n\n_OBLIGATORIU ECHIPAMENT\nDE PROTECTIE SOLARA!" font="exo2bold" position="-1.5 0 0" rotation="-90 0 0" color="yellow"
 
   a-camera-static
 
