@@ -11,8 +11,8 @@
     <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script><script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script>
   </head>
   <body class="ar ar_index" style="margin : 0px; overflow: hidden;">
-    <a-scene artoolkit=""><a-anchor hit-testing-enabled="true"><!--a-assets
-        /!a-mixin#marker geometry=("primitive: plane; width: 0.02; height: 0.02") material=("color: red") --><!--a-entity mixin="marker" position=("-2.5 0.7 0.01") --><!--Animations.--><!--a-entity#opacity position=("-2.5 0.7 0") text=("color: white; align: center; value: Animating opacity; width: 1.5") --><!--a-entity mixin="marker" position=("0 0.7 0.01") --><a-text color="red" font="roboto" id="opacity" value="IESIREA DIN ADAPOST TIP PS2050 SE FACE PRIN POARTA X20\nECHIPAMENT SPECIAL DE PROTECTIE SOLARA SUBTERAN NIVELUL 1"></a-text></a-anchor><a-camera-static preset="kanji"></a-camera-static></a-scene>
+    <a-scene artoolkit=""><a-anchor hit-testing-enabled="true" preset="kanji"><!--a-assets
+        /!a-mixin#marker geometry=("primitive: plane; width: 0.02; height: 0.02") material=("color: red") --><!--a-entity mixin="marker" position=("-2.5 0.7 0.01") --><!--Animations.--><!--a-entity#opacity position=("-2.5 0.7 0") text=("color: white; align: center; value: Animating opacity; width: 1.5") --><!--a-entity mixin="marker" position=("0 0.7 0.01") --><a-text color="yellow" font="roboto" id="opacity" value="IESIREA DIN ADAPOST PS2050 SE FACE PRIN POARTA X20\nOBLIGATORIU ECHIPAMENT DE PROTECTIE SOLARA!"></a-text></a-anchor><a-camera-static></a-camera-static></a-scene>
     <script>
       // Animate opacity.
       var opacity = document.getElementById('opacity');
