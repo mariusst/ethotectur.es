@@ -1,0 +1,23 @@
+---
+layout: "ar"
+title: "There is no sunny day"
+---
+  
+a-scene artoolkit=""
+  a-anchor hit-testing-enabled="false" preset="hiro"
+    a-text#opacity value="_IESIREA DIN ADAPOST PS2050\nSE FACE PRIN POARTA X20!\n\n_OBLIGATORIU ECHIPAMENT\nDE PROTECTIE SOLARA!" font="exo2bold" position="-1.5 -2 0" rotation="-100 0 0" color="yellow"
+
+  a-camera-static
+
+javascript:
+  // Animate opacity.
+  var opacity = document.getElementById('opacity');
+  var obj = {opacity: 0};
+  var tween = new AFRAME.TWEEN.Tween(obj)
+    .to({opacity: 1}, 500)
+    .repeat( Infinity )
+    .yoyo( true )
+    .onUpdate(function () {
+      opacity.setAttribute('text', 'opacity', obj.opacity);
+    })
+    .start();
