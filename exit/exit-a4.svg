@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
+   sodipodi:docname="exit-a4.svg"
+   inkscape:export-filename="/home/marius/exit-ethotk.png"
+   inkscape:export-xdpi="353"
+   inkscape:export-ydpi="353">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.66903058"
+     inkscape:cx="376.70378"
+     inkscape:cy="377.2047"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1280"
+     inkscape:window-height="964"
+     inkscape:window-x="0"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:#000000;stroke-width:0.50186694"
+       d="M 2.0973142,149.10367 V 46.220945 H 104.9799 207.86261 V 149.10367 251.98639 H 104.9799 2.0973142 Z m 154.0730058,0 V 97.91324 H 104.9799 53.789598 v 51.19043 51.19043 h 51.190302 51.19042 z m -96.860179,23.83869 v -14.30323 h 9.786418 9.786395 v 2.76028 2.76026 h -6.022403 -6.022406 v 2.76029 2.76026 h 5.771474 5.771477 v 2.76026 2.76027 h -5.771477 -5.771474 v 3.26215 3.26213 h 6.273337 6.273329 v 2.76024 2.76028 H 69.347488 59.310141 Z m 28.334847,7.20375 c 2.633536,-3.9047 4.788245,-7.3079 4.788245,-7.5627 0,-0.25479 -1.883233,-3.21415 -4.184987,-6.57641 -2.301755,-3.36226 -4.347619,-6.39549 -4.546365,-6.74052 -0.275284,-0.47789 0.522349,-0.62735 3.34798,-0.62735 h 3.709357 l 3.124848,4.51682 c 1.71866,2.48424 3.195444,4.51679 3.281771,4.51679 0.08629,0 1.484538,-2.02901 3.107193,-4.50893 l 2.95033,-4.50893 3.91821,-0.006 3.91822,-0.006 -4.79975,6.98902 -4.79971,6.989 4.77099,7.0181 c 2.62402,3.85994 4.77095,7.15134 4.77095,7.3142 0,0.16295 -1.63731,0.28777 -3.6385,0.27762 l -3.63853,-0.0191 -3.2016,-4.73876 c -1.760877,-2.60631 -3.403587,-4.6139 -3.650468,-4.46133 -0.246881,0.15243 -1.804353,2.29335 -3.461085,4.75724 l -3.012184,4.47981 h -3.771579 -3.771615 z m 27.874102,-7.20375 v -14.30323 h 3.76401 3.76399 v 14.30323 14.30319 h -3.76399 -3.76401 z m 20.57656,2.76026 v -11.54295 h -4.76775 -4.76772 v -2.76026 -2.76028 h 13.04854 13.04854 v 2.76028 2.76026 h -4.76772 -4.76775 v 11.54295 11.54293 h -3.51307 -3.51307 z"
+       id="path880"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.63888931px;line-height:125%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="105.80864"
+       y="268.02496"
+       id="text884"><tspan
+         sodipodi:role="line"
+         id="tspan882"
+         x="105.80864"
+         y="268.02496"
+         style="font-size:16.22777939px;stroke-width:0.26458332px">etho.tk/exit</tspan></text>
+  </g>
+</svg>
