@@ -2,6 +2,8 @@
 title: "etho.tk home"
 ---
 
+script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="5d6f297d-ef22-4aaf-9510-581731c2d403" data-culture="ro" type="text/javascript" async=""
+
 .row.top-margin-20px
   .medium-1.columns
     a href="/"
@@ -17,9 +19,68 @@ hr
 
 .row
   .medium-8.columns
-    h6 Proiecte
+    h6 Lucrări
     hr
     ul.accordion data-accordion="" data-multi-expand="true" data-allow-all-closed="true"
+      li.accordion-item data-accordion-item="" 
+        a.accordion-title href="#" 
+          b There was no ”real” sunny day
+        .accordion-content data-tab-content="" 
+          img alt="There was no ”real” sunny day" src="https://i.imgur.com/kJmXd8S.png" 
+          p   
+          p 
+            em 
+              a href="https://issuu.com/kinema-ikon/docs/2017_iok/72" There was no ”real” sunny day 
+            | este o lucrare expusă în toamna lui 2017 în cadrul expoziției colective  
+            em 
+              a href="https://www.facebook.com/events/853790858136032/?active_tab=discussion" The internet of KI
+            | , curatoriată de Kinema Ikon la Muzeul de Artă din Arad.
+          p Lucrarea cuprinde o instalație video și o aplicație web de realitate augumentată.
+          h6 Video installation - Nita Mocanu
+          p
+            | "The already existing ecological emergency resembles the anxiety about virtual reality—that we will be drowned in a psychotic soup where we won't be able to tell one thing from another—only it also involves the possibility of our own death. It is very hard to get used to the idea that the catastrophe, far from being imminent, has already taken place."
+            br
+            | Timothy Morton ”Ecology without nature”
+          p
+            | Un viitor experimental ca o zi însorită fără sfârșit. Atât de însorită că o urmărești mediată de un ecran digital, atât de insuportabil de reală că privești nostalgic imaginea unei zile însorite,  de acum 100 de ani. Suntem încă în romantism, natura este o idee romantică.
+            br
+            | Imaginea acelei zile însorite te face să uiți că este doar o imagine estetică, că de fapt nu a existat niciodată, că este doar un simulacru.
+            br
+            | Totul este învăluit în ambianța unui zile însorite, prelata arsă de soare, imaginea unui soare printre frunzele unui copac, cadrul unei ferestre fictive... În viitor. Viitorul încălzirii globale care a fost deja.
+          p
+            | Lucrarea este de asemenea un exercițiu de ecomimesis
+            sup 1
+            | . Definit de Morton ca modul în care un autor, un artist te face să-i fii aproape, să simți contextul în care el creează, contextul care se scurge imperceptibil în creația sa. Lucrarea ”There was no ”real” sunny day” este o instalație narativă care transpune privitorul într-un viitor alternativ, un viitor-consecință care poate apărea ca urmare a modului în care gândim și folosim natura.
+            br
+            | ----------------
+            br
+            sup 
+              | 1 ”First and foremost, ambient poetics is a rendering, I mean this in the sense developed by the concrete music composer and cinema theorist Michel Chion. Rendering is technically what visual- and sonic-effects artists do to a film to generate a more or less consistent sense of atmosphere or world. After the action has been shot and the computer and other effects pasted into the film, the entire shot is "rendered," so that all the filmic elements will simulate, say, a sunny day in the Alps, rather than a wet night in the tropics. This rendering, like Jean Baudrillard's idea of the simulacrum, pertains to a copy without an original. There was no "real" sunny day. Rendering nevertheless bathes all the filmic elements in the atmosphere of the sunny day.” Timothy Morton ”Ecology without nature”
+          iframe width="560" height="315" src="https://www.youtube.com/embed/53uiIG2fV-g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""
+          p
+          h6 Augumented reality web application - Marius Stoica
+          p Aplicația “There was no ”real” sunny day - Exit” face referire la o alta față a aceluiași viitor, de care Morton e conștient (asa cum transpare din primul citat: "the anxiety about virtual reality"). Un viitor augmentat, în care gadget-urile s-au transformat în outfit electronic și implanturi, iar biologicul este o serie de variabile IoT. Trans-umanismul a fost demult înghițit de corporatism și transformat în capital. Realitatea rămânând în acest fel un simplu fundal pe baza căruia procese electronice complexe dau sens acestei lumi pentru a face mai evident faptul ca suntem doar un mecanism entropic...
+
+          p Aplicatia “There was no ”real” sunny day - Exit” este integrata în platforma etho.tk ca aplicație web HTML5. Inovația tehnică a acestei lucrări este aplicația de realitate augumentată accesibilă online. Lucrarea nu depinde de o aplicație care trebuie instalată separat. Un browser modern (Firefox sau Chrome) este suficient pentru a vizualiza lucrarea la adresa etho.tk/exit. Mai mult decât atât, aplicația web este bazată pe software open source. De obicei, aplicațiile de realitate augumentată sunt bazate pe software proprietar care limitează și condiționează utilizarea lor pentru lucrări artistice.
+
+          p 
+            | Software-ul folosit este 
+            a href="https://github.com/jeromeetienne/AR.js" AR.js
+            |  care este o implementare a framework-ului 
+            a href="http://www.hitl.washington.edu/artoolkit/" ARToolKit
+            |  în JavaScript. ARToolKit crează aplicații de realitate augumentată pe baza recunoașterii unui marker grafic (figuri asimetrice încadrate într-un chenar negru). Alte pachete software folosite de AR.js: 
+            a href="https://threejs.org/" three.js
+            |  și 
+            a href="https://aframe.io/" a-frame
+            | .
+            p 
+              | Aplicația poate fi accesată încărcând-o într-un browser modern precum Firefox sau Chrome de la adresa 
+              a href="/exit/" etho.tk/exit
+              | , dați-i acces la camera video și indreptați camera către 
+              a href="/exit/exit-a4.svg" markerul "exit"
+              | . Un mesaj intermitent de culoarea galbenă va apare.
+            img src="https://i.imgur.com/6c9tQzi.gif"
+
       li.accordion-item data-accordion-item="" 
         a.accordion-title href="#" 
           b Spațiul ca umoare
@@ -134,7 +195,7 @@ hr
       a href="http://www.nitamocanu.ro/"  Nita Mocanu.  
       | Urmăm drumuri la intersecția dintre arta contemporană (video performance, instalație, artă digitală), filosofie contemporană (realism speculativ, filosofie experimentală) și noile tehnologii (HTML5, web semantic, realitatea virtuală și augumentată). 
     p 
-      | etho.tk este "ca atare", propria teorie, un șantier, un creuzet, works in progress,  
+      | etho.tk este "ca atare", propria teorie, un șantier, un creuzet, work in progress,  
       a alt="source on github" href="https://github.com/mariusst/etho.tk" open source
       | .
 
